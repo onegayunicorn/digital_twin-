@@ -1,0 +1,91 @@
+project:
+  id: IDENTITY-FORGE-V2
+  name: Identity Forge v2.0
+  version: 2.0.0
+  codename: sovereign-identity
+  owner:
+    organization: Sovereign Systems
+    maintainer: owner
+
+  vision:
+    one_sentence: >
+      A sovereign identity simulation platform using 5D reflection grids and No Gap Theory.
+
+  problem:
+    statement: >
+      Traditional character systems are discrete, fragmented, and lack the continuous medium framework needed for true digital twin simulation.
+
+  solution:
+    statement: >
+      Identity Forge v2.0 implements No Gap Theory with Yee Lattice integration to create a continuous, alive digital twin of character identity.
+
+  users:
+    - public
+    - enterprise
+    - research
+    - developer
+
+  domains:
+    - software
+    - ai
+    - science
+    - digital_twin
+
+  deployment_targets:
+    - open_source
+    - cloud
+    - decentralized
+    - enterprise
+    - research
+
+  interfaces:
+    - web
+    - api
+    - cli
+    - sdk
+
+  research:
+    required: true
+    hypotheses:
+      - "No Gap Theory enables continuous medium simulation"
+      - "Yee Lattice integration provides stable digital twin foundation"
+    datasets: []
+    papers: []
+    laboratories: []
+
+  ai:
+    required: true
+    models: []
+    agents:
+      - manus
+      - autohive
+
+  quantum:
+    required: false
+    simulators: []
+    qpus: []
+
+  commercial:
+    required: false
+    payments: []
+    subscriptions: []
+
+  decentralized:
+    required: false
+    networks: []
+    contracts: []
+    storage: []
+
+  security:
+    classification: public
+    pii: false
+    financial_data: false
+    regulated_data: false
+
+  license:
+    software: Apache-2.0
+    documentation: CC-BY-4.0
+
+  status:
+    phase: production
+    gate: 10

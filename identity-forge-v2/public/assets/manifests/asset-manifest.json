@@ -1,0 +1,31 @@
+{
+  "version": "2.0.0",
+  "baseUrl": "",
+  "generatedAt": "2026-08-09T00:00:00.000Z",
+  "assets": [
+    {
+      "id": "base-character",
+      "name": "Base Character Model",
+      "type": "model",
+      "url": "/models/base-character.glb",
+      "size": 2516582,
+      "description": "Base character mesh with armature"
+    },
+    {
+      "id": "morph-targets",
+      "name": "Morph Targets Pack",
+      "type": "model",
+      "url": "/models/morph-targets.glb",
+      "size": 1887437,
+      "description": "Facial morph targets: eyes, nose, mouth, jaw, brows, cheeks"
+    },
+    {
+      "id": "heritage-material",
+      "name": "Heritage Material Pack",
+      "type": "material",
+      "url": "/models/heritage-material.glb",
+      "size": 933233,
+      "description": "Premium PBR materials for heritage characters"
+    }
+  ]
+}

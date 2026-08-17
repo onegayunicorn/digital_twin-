@@ -1,0 +1,28 @@
+{
+  "name": "digital-twin-character-customiser",
+  "version": "1.0.0",
+  "description": "Digital Twin Character Customiser Monorepo",
+  "private": true,
+  "workspaces": [
+    "web-app",
+    "identity-forge-v2"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace=web-app",
+    "build": "npm run build --workspace=web-app",
+    "start": "npm run start --workspace=web-app",
+    "check": "npm run check --workspace=web-app",
+    "lint": "npm run check --workspace=web-app"
+  },
+  "keywords": [
+    "digital-twin",
+    "3d",
+    "ai",
+    "customiser"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@google/genai": "^2.17.1"
+  }
+}

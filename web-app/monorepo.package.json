@@ -1,0 +1,8 @@
+{
+  "name": "neon-borough-archive",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Original urban digital-twin game systems with simulation-only Coherence Node telemetry.",
+  "workspaces": ["cores/*", "engines/*", "game/*", "devices/*", "simulations/*", "client"],
+  "license": "MIT"
+}

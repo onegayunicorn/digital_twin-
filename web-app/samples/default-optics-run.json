@@ -1,0 +1,713 @@
+{
+  "schemaVersion": "1.0.0",
+  "recordId": "sample-default-optics",
+  "generatedAt": "2026-08-14T00:00:00.000Z",
+  "status": "completed",
+  "scientificBoundary": "Simulation-only visual model. This record is not a physical measurement, device instruction, spacetime claim, or evidence of portal creation.",
+  "model": {
+    "id": "optics",
+    "label": "Optical-metric tunnel",
+    "short": "Transformation optics",
+    "ceiling": 0.86
+  },
+  "configuration": {
+    "correlation": 0.72,
+    "fieldPattern": 0.6,
+    "environment": 0.18,
+    "particleCount": 72,
+    "resemblance": 0.52,
+    "tone": 0.44,
+    "vectors": {
+      "brow": {
+        "x": -0.14,
+        "y": 0.08
+      },
+      "eyes": {
+        "x": 0.08,
+        "y": 0.02
+      },
+      "nose": {
+        "x": -0.04,
+        "y": -0.08
+      },
+      "jaw": {
+        "x": 0.18,
+        "y": 0.02
+      }
+    }
+  },
+  "results": {
+    "elapsedModelTime": 100,
+    "peak": {
+      "time": 81.25,
+      "stage": 5,
+      "fidelity": 0.5541279777915729,
+      "coherence": 0.5742725217184377,
+      "noise": 0.264675,
+      "analogyIndex": 0.512300436240856
+    },
+    "final": {
+      "time": 100,
+      "stage": 5,
+      "fidelity": 0.15527554559999995,
+      "coherence": 0.288173568,
+      "noise": 0.2778,
+      "analogyIndex": 0.15831071500799998
+    },
+    "telemetrySeries": [
+      {
+        "time": 0,
+        "stage": 1,
+        "fidelity": 0.03,
+        "coherence": 0.17679360000000002,
+        "noise": 0.20779999999999998,
+        "analogyIndex": 0.052171312000000004
+      },
+      {
+        "time": 1.25,
+        "stage": 1,
+        "fidelity": 0.03,
+        "coherence": 0.18616533519019654,
+        "noise": 0.20867499999999997,
+        "analogyIndex": 0.05594119077988255
+      },
+      {
+        "time": 2.5,
+        "stage": 1,
+        "fidelity": 0.03,
+        "coherence": 0.19553186775940565,
+        "noise": 0.20955,
+        "analogyIndex": 0.059708884458950374
+      },
+      {
+        "time": 3.75,
+        "stage": 1,
+        "fidelity": 0.03916658490909083,
+        "coherence": 0.2048879979748207,
+        "noise": 0.21042499999999997,
+        "analogyIndex": 0.06878882839669738
+      },
+      {
+        "time": 5,
+        "stage": 1,
+        "fidelity": 0.05218828462867162,
+        "coherence": 0.2142285318783932,
+        "noise": 0.2113,
+        "analogyIndex": 0.08009818847355468
+      },
+      {
+        "time": 6.25,
+        "stage": 1,
+        "fidelity": 0.06518101256667783,
+        "coherence": 0.22354828417020445,
+        "noise": 0.21217499999999997,
+        "analogyIndex": 0.09138201664015902
+      },
+      {
+        "time": 7.5,
+        "stage": 1,
+        "fidelity": 0.07813755594578675,
+        "coherence": 0.23284208108703047,
+        "noise": 0.21305,
+        "analogyIndex": 0.10263395650510912
+      },
+      {
+        "time": 8.75,
+        "stage": 1,
+        "fidelity": 0.09105072207615598,
+        "coherence": 0.2421047632745031,
+        "noise": 0.21392499999999998,
+        "analogyIndex": 0.11384766937946177
+      },
+      {
+        "time": 10,
+        "stage": 1,
+        "fidelity": 0.10391334234837007,
+        "coherence": 0.25133118865127124,
+        "noise": 0.2148,
+        "analogyIndex": 0.12501683779558853
+      },
+      {
+        "time": 11.25,
+        "stage": 1,
+        "fidelity": 0.11671827621301926,
+        "coherence": 0.260516235263574,
+        "noise": 0.21567499999999998,
+        "analogyIndex": 0.13613516901425227
+      },
+      {
+        "time": 12.5,
+        "stage": 1,
+        "fidelity": 0.12945841514470083,
+        "coherence": 0.2696548041286396,
+        "noise": 0.21655,
+        "analogyIndex": 0.1471963985179551
+      },
+      {
+        "time": 13.75,
+        "stage": 1,
+        "fidelity": 0.14212668658824298,
+        "coherence": 0.27874182206533293,
+        "noise": 0.21742499999999998,
+        "analogyIndex": 0.15819429348862074
+      },
+      {
+        "time": 15,
+        "stage": 1,
+        "fidelity": 0.1547160578849599,
+        "coherence": 0.2877722445104784,
+        "noise": 0.2183,
+        "analogyIndex": 0.1691226562676777
+      },
+      {
+        "time": 16.25,
+        "stage": 1,
+        "fidelity": 0.16721954017675894,
+        "coherence": 0.2967410583192972,
+        "noise": 0.21917499999999998,
+        "analogyIndex": 0.179975327796625
+      },
+      {
+        "time": 17.5,
+        "stage": 1,
+        "fidelity": 0.17963019228593216,
+        "coherence": 0.3056432845484018,
+        "noise": 0.22005,
+        "analogyIndex": 0.1907461910361694
+      },
+      {
+        "time": 18.75,
+        "stage": 1,
+        "fidelity": 0.19194112456847875,
+        "coherence": 0.3144739812198048,
+        "noise": 0.22092499999999998,
+        "analogyIndex": 0.20142917436203567
+      },
+      {
+        "time": 20,
+        "stage": 2,
+        "fidelity": 0.20414550273881893,
+        "coherence": 0.32322824606440625,
+        "noise": 0.2218,
+        "analogyIndex": 0.2120182549355656
+      },
+      {
+        "time": 21.25,
+        "stage": 2,
+        "fidelity": 0.21623655166377637,
+        "coherence": 0.3319012192434372,
+        "noise": 0.22267499999999998,
+        "analogyIndex": 0.22250746204723387
+      },
+      {
+        "time": 22.5,
+        "stage": 2,
+        "fidelity": 0.22820755912372256,
+        "coherence": 0.3404880860463484,
+        "noise": 0.22355,
+        "analogyIndex": 0.23289088043122538
+      },
+      {
+        "time": 23.75,
+        "stage": 2,
+        "fidelity": 0.2400518795387955,
+        "coherence": 0.3489840795636468,
+        "noise": 0.22442499999999999,
+        "analogyIndex": 0.24316265354923305
+      },
+      {
+        "time": 25,
+        "stage": 2,
+        "fidelity": 0.2517629376581242,
+        "coherence": 0.3573844833331955,
+        "noise": 0.2253,
+        "analogyIndex": 0.25331698684165416
+      },
+      {
+        "time": 26.25,
+        "stage": 2,
+        "fidelity": 0.2633342322100103,
+        "coherence": 0.36568463395850836,
+        "noise": 0.226175,
+        "analogyIndex": 0.2633481509443794
+      },
+      {
+        "time": 27.5,
+        "stage": 2,
+        "fidelity": 0.27475933951104137,
+        "coherence": 0.3738799236975863,
+        "noise": 0.22704999999999997,
+        "analogyIndex": 0.27325048486939024
+      },
+      {
+        "time": 28.75,
+        "stage": 2,
+        "fidelity": 0.28603191703213154,
+        "coherence": 0.3819658030208566,
+        "noise": 0.227925,
+        "analogyIndex": 0.28301839914739607
+      },
+      {
+        "time": 30,
+        "stage": 2,
+        "fidelity": 0.29714570691951087,
+        "coherence": 0.3899377831367972,
+        "noise": 0.22879999999999998,
+        "analogyIndex": 0.2926463789307711
+      },
+      {
+        "time": 31.25,
+        "stage": 2,
+        "fidelity": 0.30809453946870663,
+        "coherence": 0.3977914384838423,
+        "noise": 0.229675,
+        "analogyIndex": 0.30212898705506364
+      },
+      {
+        "time": 32.5,
+        "stage": 2,
+        "fidelity": 0.3188723365495914,
+        "coherence": 0.40552240918718685,
+        "noise": 0.23054999999999998,
+        "analogyIndex": 0.3114608670573814
+      },
+      {
+        "time": 33.75,
+        "stage": 2,
+        "fidelity": 0.32947311498059273,
+        "coherence": 0.41312640347912516,
+        "noise": 0.231425,
+        "analogyIndex": 0.32063674614997634
+      },
+      {
+        "time": 35,
+        "stage": 2,
+        "fidelity": 0.3398909898501942,
+        "coherence": 0.42059920008158147,
+        "noise": 0.23229999999999998,
+        "analogyIndex": 0.32965143814737685
+      },
+      {
+        "time": 36.25,
+        "stage": 2,
+        "fidelity": 0.35012017778388327,
+        "coherence": 0.427936650549508,
+        "noise": 0.233175,
+        "analogyIndex": 0.3384998463454456
+      },
+      {
+        "time": 37.5,
+        "stage": 2,
+        "fidelity": 0.36015500015473007,
+        "coherence": 0.435134681573851,
+        "noise": 0.23404999999999998,
+        "analogyIndex": 0.34717696635076084
+      },
+      {
+        "time": 38.75,
+        "stage": 2,
+        "fidelity": 0.369989886235819,
+        "coherence": 0.4421892972428063,
+        "noise": 0.234925,
+        "analogyIndex": 0.3556778888587536
+      },
+      {
+        "time": 40,
+        "stage": 3,
+        "fidelity": 0.379619376292779,
+        "coherence": 0.44909658126010693,
+        "noise": 0.23579999999999998,
+        "analogyIndex": 0.36399780237905666
+      },
+      {
+        "time": 41.25,
+        "stage": 3,
+        "fidelity": 0.3890381246146983,
+        "coherence": 0.4558526991191153,
+        "noise": 0.236675,
+        "analogyIndex": 0.3721319959065534
+      },
+      {
+        "time": 42.5,
+        "stage": 3,
+        "fidelity": 0.39824090248174,
+        "coherence": 0.46245390023150873,
+        "noise": 0.23754999999999998,
+        "analogyIndex": 0.38007586153664286
+      },
+      {
+        "time": 43.75,
+        "stage": 3,
+        "fidelity": 0.4072226010678115,
+        "coherence": 0.46889652000937987,
+        "noise": 0.238425,
+        "analogyIndex": 0.38782489702327017
+      },
+      {
+        "time": 45,
+        "stage": 3,
+        "fidelity": 0.4159782342766757,
+        "coherence": 0.47517698189959406,
+        "noise": 0.23929999999999998,
+        "analogyIndex": 0.3953747082783014
+      },
+      {
+        "time": 46.25,
+        "stage": 3,
+        "fidelity": 0.42450294150993045,
+        "coherence": 0.48129179936927624,
+        "noise": 0.240175,
+        "analogyIndex": 0.4027210118108557
+      },
+      {
+        "time": 47.5,
+        "stage": 3,
+        "fidelity": 0.4327919903653192,
+        "coherence": 0.4872375778413218,
+        "noise": 0.24105,
+        "analogyIndex": 0.4098596371052403
+      },
+      {
+        "time": 48.75,
+        "stage": 3,
+        "fidelity": 0.4408407792638743,
+        "coherence": 0.49301101657886265,
+        "noise": 0.241925,
+        "analogyIndex": 0.4167865289361694
+      },
+      {
+        "time": 50,
+        "stage": 3,
+        "fidelity": 0.448644840004436,
+        "coherence": 0.49860891051763506,
+        "noise": 0.2428,
+        "analogyIndex": 0.4234977496199796
+      },
+      {
+        "time": 51.25,
+        "stage": 3,
+        "fidelity": 0.45619984024412713,
+        "coherence": 0.5040281520452385,
+        "noise": 0.24367499999999997,
+        "analogyIndex": 0.4299894812005939
+      },
+      {
+        "time": 52.5,
+        "stage": 3,
+        "fidelity": 0.4635015859034089,
+        "coherence": 0.5092657327262942,
+        "noise": 0.24455,
+        "analogyIndex": 0.43625802756902066
+      },
+      {
+        "time": 53.75,
+        "stage": 3,
+        "fidelity": 0.4705460234943795,
+        "coherence": 0.5143187449725464,
+        "noise": 0.24542499999999998,
+        "analogyIndex": 0.44229981651520955
+      },
+      {
+        "time": 55,
+        "stage": 3,
+        "fidelity": 0.477329242371026,
+        "coherence": 0.5191843836569799,
+        "noise": 0.2463,
+        "analogyIndex": 0.4481114017111266
+      },
+      {
+        "time": 56.25,
+        "stage": 3,
+        "fidelity": 0.48384747690017854,
+        "coherence": 0.5238599476710568,
+        "noise": 0.24717499999999998,
+        "analogyIndex": 0.45368946462394744
+      },
+      {
+        "time": 57.5,
+        "stage": 3,
+        "fidelity": 0.4900971085519629,
+        "coherence": 0.5283428414242088,
+        "noise": 0.24805,
+        "analogyIndex": 0.45903081635830617
+      },
+      {
+        "time": 58.75,
+        "stage": 3,
+        "fidelity": 0.49607466790858856,
+        "coherence": 0.5326305762847527,
+        "noise": 0.248925,
+        "analogyIndex": 0.4641323994265774
+      },
+      {
+        "time": 60,
+        "stage": 4,
+        "fidelity": 0.5017768365903608,
+        "coherence": 0.5367207719614271,
+        "noise": 0.2498,
+        "analogyIndex": 0.4689912894462086
+      },
+      {
+        "time": 61.25,
+        "stage": 4,
+        "fidelity": 0.5072004490978432,
+        "coherence": 0.5406111578247874,
+        "noise": 0.250675,
+        "analogyIndex": 0.4736046967631598
+      },
+      {
+        "time": 62.5,
+        "stage": 4,
+        "fidelity": 0.5123424945691535,
+        "coherence": 0.5442995741677217,
+        "noise": 0.25155,
+        "analogyIndex": 0.4779699680005521
+      },
+      {
+        "time": 63.75,
+        "stage": 4,
+        "fidelity": 0.5172001184514106,
+        "coherence": 0.5477839734043896,
+        "noise": 0.252425,
+        "analogyIndex": 0.4820845875316617
+      },
+      {
+        "time": 65,
+        "stage": 4,
+        "fidelity": 0.5217706240854103,
+        "coherence": 0.551062421206918,
+        "noise": 0.25329999999999997,
+        "analogyIndex": 0.4859461788764435
+      },
+      {
+        "time": 66.25,
+        "stage": 4,
+        "fidelity": 0.5260514742026479,
+        "coherence": 0.5541330975792231,
+        "noise": 0.254175,
+        "analogyIndex": 0.4895525060208094
+      },
+      {
+        "time": 67.5,
+        "stage": 4,
+        "fidelity": 0.5300402923338556,
+        "coherence": 0.5569942978673625,
+        "noise": 0.25505,
+        "analogyIndex": 0.49290147465792855
+      },
+      {
+        "time": 68.75,
+        "stage": 4,
+        "fidelity": 0.5337348641282753,
+        "coherence": 0.5596444337058559,
+        "noise": 0.25592499999999996,
+        "analogyIndex": 0.4959911333508591
+      },
+      {
+        "time": 70,
+        "stage": 4,
+        "fidelity": 0.5371331385829317,
+        "coherence": 0.5620820338994491,
+        "noise": 0.2568,
+        "analogyIndex": 0.498819674615869
+      },
+      {
+        "time": 71.25,
+        "stage": 4,
+        "fidelity": 0.540233229181226,
+        "coherence": 0.5643057452398337,
+        "noise": 0.257675,
+        "analogyIndex": 0.5013854359258412
+      },
+      {
+        "time": 72.5,
+        "stage": 4,
+        "fidelity": 0.5430334149402147,
+        "coherence": 0.5663143332568654,
+        "noise": 0.25855,
+        "analogyIndex": 0.503686900633208
+      },
+      {
+        "time": 73.75,
+        "stage": 4,
+        "fidelity": 0.5455321413659968,
+        "coherence": 0.5681066829038685,
+        "noise": 0.259425,
+        "analogyIndex": 0.5057226988119028
+      },
+      {
+        "time": 75,
+        "stage": 4,
+        "fidelity": 0.5477280213166736,
+        "coherence": 0.5696817991766412,
+        "noise": 0.2603,
+        "analogyIndex": 0.5074916080178601
+      },
+      {
+        "time": 76.25,
+        "stage": 4,
+        "fidelity": 0.5496198357724067,
+        "coherence": 0.5710388076658227,
+        "noise": 0.261175,
+        "analogyIndex": 0.5089925539676414
+      },
+      {
+        "time": 77.5,
+        "stage": 4,
+        "fidelity": 0.551206534512144,
+        "coherence": 0.5721769550423119,
+        "noise": 0.26205,
+        "analogyIndex": 0.5102246111348144
+      },
+      {
+        "time": 78.75,
+        "stage": 4,
+        "fidelity": 0.5524872366966387,
+        "coherence": 0.5730956094754706,
+        "noise": 0.26292499999999996,
+        "analogyIndex": 0.5111870032637481
+      },
+      {
+        "time": 80,
+        "stage": 5,
+        "fidelity": 0.5534612313574389,
+        "coherence": 0.573794260983877,
+        "noise": 0.2638,
+        "analogyIndex": 0.5118791038005428
+      },
+      {
+        "time": 81.25,
+        "stage": 5,
+        "fidelity": 0.5541279777915729,
+        "coherence": 0.5742725217184377,
+        "noise": 0.264675,
+        "analogyIndex": 0.512300436240856
+      },
+      {
+        "time": 82.5,
+        "stage": 5,
+        "fidelity": 0.5433973637444818,
+        "coherence": 0.5665753956541429,
+        "noise": 0.26555,
+        "analogyIndex": 0.5026776371465395
+      },
+      {
+        "time": 83.75,
+        "stage": 5,
+        "fidelity": 0.5157366335999998,
+        "coherence": 0.5467342079999999,
+        "noise": 0.266425,
+        "analogyIndex": 0.47813486484799983
+      },
+      {
+        "time": 85,
+        "stage": 5,
+        "fidelity": 0.4880088575999999,
+        "coherence": 0.526844928,
+        "noise": 0.2673,
+        "analogyIndex": 0.45353300716799994
+      },
+      {
+        "time": 86.25,
+        "stage": 5,
+        "fidelity": 0.46028108159999975,
+        "coherence": 0.5069556479999999,
+        "noise": 0.268175,
+        "analogyIndex": 0.42893114948799976
+      },
+      {
+        "time": 87.5,
+        "stage": 5,
+        "fidelity": 0.4325533055999998,
+        "coherence": 0.487066368,
+        "noise": 0.26905,
+        "analogyIndex": 0.4043292918079999
+      },
+      {
+        "time": 88.75,
+        "stage": 5,
+        "fidelity": 0.40482552959999996,
+        "coherence": 0.46717708799999996,
+        "noise": 0.26992499999999997,
+        "analogyIndex": 0.3797274341279999
+      },
+      {
+        "time": 90,
+        "stage": 5,
+        "fidelity": 0.3770977535999998,
+        "coherence": 0.4472878079999999,
+        "noise": 0.2708,
+        "analogyIndex": 0.35512557644799986
+      },
+      {
+        "time": 91.25,
+        "stage": 5,
+        "fidelity": 0.34936997759999994,
+        "coherence": 0.42739852799999994,
+        "noise": 0.271675,
+        "analogyIndex": 0.3305237187679999
+      },
+      {
+        "time": 92.5,
+        "stage": 5,
+        "fidelity": 0.32164220159999973,
+        "coherence": 0.4075092479999998,
+        "noise": 0.27255,
+        "analogyIndex": 0.30592186108799974
+      },
+      {
+        "time": 93.75,
+        "stage": 5,
+        "fidelity": 0.29391442559999986,
+        "coherence": 0.38761996799999987,
+        "noise": 0.273425,
+        "analogyIndex": 0.28132000340799984
+      },
+      {
+        "time": 95,
+        "stage": 5,
+        "fidelity": 0.2661866496,
+        "coherence": 0.36773068800000003,
+        "noise": 0.2743,
+        "analogyIndex": 0.256718145728
+      },
+      {
+        "time": 96.25,
+        "stage": 5,
+        "fidelity": 0.23845887359999984,
+        "coherence": 0.34784140799999985,
+        "noise": 0.275175,
+        "analogyIndex": 0.23211628804799983
+      },
+      {
+        "time": 97.5,
+        "stage": 5,
+        "fidelity": 0.21073109759999992,
+        "coherence": 0.32795212799999995,
+        "noise": 0.27605,
+        "analogyIndex": 0.2075144303679999
+      },
+      {
+        "time": 98.75,
+        "stage": 5,
+        "fidelity": 0.18300332159999977,
+        "coherence": 0.3080628479999999,
+        "noise": 0.276925,
+        "analogyIndex": 0.18291257268799982
+      },
+      {
+        "time": 100,
+        "stage": 5,
+        "fidelity": 0.15527554559999995,
+        "coherence": 0.288173568,
+        "noise": 0.2778,
+        "analogyIndex": 0.15831071500799998
+      }
+    ]
+  },
+  "validation": {
+    "normalizedOutputs": true,
+    "environmentDirectionCheck": true,
+    "statement": "Validation checks apply to this normalized software model only."
+  }
+}

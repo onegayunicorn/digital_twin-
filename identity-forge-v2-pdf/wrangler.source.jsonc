@@ -1,0 +1,50 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "identity-forge-v2",
+  "compatibility_date": "2026-08-16",
+  "compatibility_flags": ["nodejs_compat"],
+  "assets": {
+    "directory": "./apps/web/dist"
+  },
+  "routes": [
+    {
+      "pattern": "identity-forge.sovereign.ai",
+      "custom_domain": true
+    }
+  ],
+  "env": {
+    "development": {
+      "assets": {
+        "directory": "./apps/web/dist"
+      },
+      "routes": [
+        {
+          "pattern": "dev.identity-forge.sovereign.ai",
+          "custom_domain": true
+        }
+      ]
+    },
+    "staging": {
+      "assets": {
+        "directory": "./apps/web/dist"
+      },
+      "routes": [
+        {
+          "pattern": "staging.identity-forge.sovereign.ai",
+          "custom_domain": true
+        }
+      ]
+    },
+    "production": {
+      "assets": {
+        "directory": "./apps/web/dist"
+      },
+      "routes": [
+        {
+          "pattern": "identity-forge.sovereign.ai",
+          "custom_domain": true
+        }
+      ]
+    }
+  }
+}

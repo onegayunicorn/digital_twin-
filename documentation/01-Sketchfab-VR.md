@@ -1,0 +1,11 @@
+# Sketchfab Virtual Reality
+- **Compatible Headsets**: HTC Vive, Oculus Rift, Oculus Quest, Microsoft Mixed Reality
+- **Browser Support**:
+  - Firefox/Chrome → WebVR (Vive/Oculus)
+  - Edge → Microsoft Mixed Reality
+  - Any Sketchfab model → click VR button to view in VR
+- **Reviews**:
+  - "Like walking through a living, virtual museum"
+  - "Might be one of VR's killer apps"
+  - "The YouTube of VR"
+- **URL**: https://sketchfab.com/virtual-reality

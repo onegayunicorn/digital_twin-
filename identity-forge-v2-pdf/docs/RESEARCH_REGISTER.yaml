@@ -1,0 +1,85 @@
+# RESEARCH_REGISTER.yaml
+
+claims:
+  - id: HYP-001
+    statement: "No Gap Theory enables continuous medium simulation"
+    classification: experimental
+    evidence:
+      papers: []
+      experiments: []
+      simulations:
+        - "NoGapTheoryEngine field evolution"
+    status: simulation
+
+  - id: CLAIM-001
+    statement: "Yee Lattice provides stable spatial discretization"
+    classification: established
+    evidence:
+      papers:
+        - "Yee, K. S. (1966). Numerical solution of initial boundary value problems involving Maxwell's equations in isotropic media."
+      experiments: []
+      simulations:
+        - "YeeLatticeNoGap 16³ cell stability"
+    status: verified
+
+  - id: CLAIM-002
+    statement: "CFL stability condition dt ≤ dx/(c·√(μ₀·ε₀)) ensures numerical stability"
+    classification: established
+    evidence:
+      papers:
+        - "Courant, R., Friedrichs, K., & Lewy, H. (1928). Über die partiellen Differenzengleichungen der mathematischen Physik."
+      experiments: []
+      simulations:
+        - "NoGapTheoryEngine CFL factor monitoring"
+    status: verified
+
+  - id: SPEC-001
+    statement: "No Gap Theory applies to character identity simulation"
+    classification: experimental
+    evidence:
+      papers: []
+      experiments: []
+      simulations:
+        - "Identity Forge v2.0 integration"
+    status: speculative
+
+  - id: HYP-002
+    statement: "Physical mapping E→displacement, B→vorticity creates coherent digital twin"
+    classification: hypothesis
+    evidence:
+      papers: []
+      experiments: []
+      simulations:
+        - "NoGapTheoryEngine.setElectricDisplacement"
+        - "NoGapTheoryEngine.setMagneticVorticity"
+    status: unverified
+
+  - id: NOTE-001
+    statement: "Current displacementToField is not a true divergence; it is a conceptual scaffold"
+    classification: experimental
+    evidence:
+      papers: []
+      experiments: []
+      simulations: []
+    status: note
+    caveat: "True divergence requires ∂D_x/∂x + ∂D_y/∂y + ∂D_z/∂z"
+
+  - id: NOTE-002
+    statement: "Current curlX/Y/Z implementation is not a true spatial curl"
+    classification: experimental
+    evidence:
+      papers: []
+      experiments: []
+      simulations: []
+    status: note
+    caveat: "True curl requires spatial partial derivatives with respect to coordinates"
+
+  - id: NOTE-003
+    statement: "Current CFL implementation uses simplified 1D relationship"
+    classification: experimental
+    evidence:
+      papers: []
+      experiments: []
+      simulations: []
+    status: note
+    caveat: "3D Yee/FDTD requires Δt ≤ 1/(c·√(1/Δx² + 1/Δy² + 1/Δz²))"

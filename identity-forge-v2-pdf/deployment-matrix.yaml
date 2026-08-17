@@ -1,0 +1,106 @@
+# Universal Deployment Matrix
+# Sovereign Application Factory v1.0
+#
+# Each layer has a primary provider and an alternative.
+# This ensures infrastructure portability and vendor independence.
+
+layers:
+  source:
+    primary: GitHub
+    alternative: self-hosted Git
+    notes: "Use GitHub as primary, maintain local mirrors"
+
+  ui:
+    primary: React
+    alternative: Vue / Svelte
+    notes: "Keep UI framework-agnostic where possible"
+
+  styling:
+    primary: Tailwind
+    alternative: CSS
+    notes: "Tailwind for rapid development, CSS for portability"
+
+  build:
+    primary: pnpm
+    alternative: npm / yarn
+    notes: "Use pnpm for workspaces, maintain package-lock for compatibility"
+
+  edge:
+    primary: Cloudflare
+    alternative: CDN
+    notes: "Cloudflare Workers for production, maintain static export for CDN"
+
+  frontend_hosting:
+    primary: Cloudflare
+    alternative: Vercel
+    notes: "Deploy to both for redundancy"
+
+  backend:
+    primary: Cloudflare Workers
+    alternative: containers
+    notes: "Workers for edge, containers for self-hosting"
+
+  database:
+    primary: PostgreSQL
+    alternative: distributed PostgreSQL
+    notes: "Use compatible PostgreSQL, avoid vendor-specific extensions"
+
+  cache:
+    primary: Redis
+    alternative: compatible cache
+    notes: "Use Redis, maintain compatibility layer"
+
+  ai:
+    primary: Hugging Face
+    alternative: local models
+    notes: "Use HF for production, local for sovereign deployment"
+
+  agents:
+    primary: Manus
+    alternative: other agent
+    notes: "Use Manus API, maintain adapter pattern"
+
+  automation:
+    primary: Autohive
+    alternative: GitHub Actions
+    notes: "Use Autohive for complex workflows, Actions for basic CI/CD"
+
+  prototype:
+    primary: Lovable
+    alternative: local development
+    notes: "Use Lovable for rapid prototyping, export to GitHub"
+
+  decentralized_storage:
+    primary: IPFS
+    alternative: content-addressed storage
+    notes: "Use IPFS for public artifacts, maintain CIDs"
+
+  blockchain:
+    primary: EVM-compatible
+    alternative: alternative chain
+    notes: "Use EVM for contracts, maintain chain-agnostic registry"
+
+  quantum:
+    primary: IBM
+    alternative: AWS Braket
+    notes: "Use IBM Qiskit, maintain adapter for Braket"
+
+  simulation:
+    primary: local
+    alternative: HPC
+    notes: "Local for development, HPC for production runs"
+
+  research:
+    primary: local
+    alternative: facility API
+    notes: "Local for experiments, facility API for production"
+
+  identity:
+    primary: OIDC/OAuth
+    alternative: enterprise IdP
+    notes: "Standard protocols for interoperability"
+
+  observability:
+    primary: provider
+    alternative: OpenTelemetry-compatible stack
+    notes: "Use OpenTelemetry for vendor-neutral telemetry"

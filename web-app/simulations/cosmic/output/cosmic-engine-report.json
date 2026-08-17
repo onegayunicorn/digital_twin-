@@ -1,0 +1,874 @@
+{
+  "status": "SIMULATED",
+  "config": {
+    "seed": 441,
+    "nodeCount": 12,
+    "stepCount": 32
+  },
+  "summary": {
+    "final": {
+      "status": "SIMULATED",
+      "tick": 32,
+      "lattice": {
+        "density": 0.4273130633026397,
+        "displacement": 0.16655934839472827,
+        "restoringForce": 0.17098138837958385
+      },
+      "lightGrid": {
+        "illumination": 0.45726982257235155,
+        "shadowAlignment": 0.4008974365203158,
+        "photonDensity": 0.44306375931323316
+      },
+      "resonanceMesh": {
+        "activeNodes": 8,
+        "averagePulse": 0.32353634483729815,
+        "propagation": 0.4011850675982497
+      },
+      "voidField": {
+        "pressureIndex": 0.33568376259901633,
+        "gradient": 0.22907900767742717,
+        "entropyIndex": 0.6483917805030397
+      },
+      "safety": "within-cap",
+      "boundary": "Dimensionless visual systems only; no physical field, gravity, photon, quantum, portal, financial, or hardware claim."
+    },
+    "maxPropagation": 0.44551283884042897,
+    "maxPhotonDensity": 0.6486580987925806,
+    "safetyResets": 0
+  },
+  "snapshots": [
+    {
+      "status": "SIMULATED",
+      "tick": 1,
+      "lattice": {
+        "density": 0.5166676546386877,
+        "displacement": 0.17850795580855944,
+        "restoringForce": 0.18797652376301874
+      },
+      "lightGrid": {
+        "illumination": 0.6547480482473068,
+        "shadowAlignment": 0.31059425125192375,
+        "photonDensity": 0.6024056870001954
+      },
+      "resonanceMesh": {
+        "activeNodes": 9,
+        "averagePulse": 0.35928454745195887,
+        "propagation": 0.44551283884042897
+      },
+      "voidField": {
+        "pressureIndex": 0.28518556999420025,
+        "gradient": 0.4528523331400088,
+        "entropyIndex": 0.5644666597401045
+      },
+      "safety": "within-cap",
+      "boundary": "Dimensionless visual systems only; no physical field, gravity, photon, quantum, portal, financial, or hardware claim."
+    },
+    {
+      "status": "SIMULATED",
+      "tick": 2,
+      "lattice": {
+        "density": 0.5133600351968727,
+        "displacement": 0.17919611241375416,
+        "restoringForce": 0.1882742245503734
+      },
+      "lightGrid": {
+        "illumination": 0.653193934245957,
+        "shadowAlignment": 0.3086794180511214,
+        "photonDensity": 0.6016505432273759
+      },
+      "resonanceMesh": {
+        "activeNodes": 10,
+        "averagePulse": 0.3578729414565693,
+        "propagation": 0.4437624474061459
+      },
+      "voidField": {
+        "pressureIndex": 0.2905686491273851,
+        "gradient": 0.4646215411003623,
+        "entropyIndex": 0.56876942415971
+      },
+      "safety": "within-cap",
+      "boundary": "Dimensionless visual systems only; no physical field, gravity, photon, quantum, portal, financial, or hardware claim."
+    },
+    {
+      "status": "SIMULATED",
+      "tick": 3,
+      "lattice": {
+        "density": 0.510080796904709,
+        "displacement": 0.1819654106643364,
+        "restoringForce": 0.19028043956050567
+      },
+      "lightGrid": {
+        "illumination": 0.6548762101401083,
+        "shadowAlignment": 0.3045547260353094,
+        "photonDensity": 0.6036454733541692
+      },
+      "resonanceMesh": {
+        "activeNodes": 9,
+        "averagePulse": 0.3573128687626396,
+        "propagation": 0.4430679572656731
+      },
+      "voidField": {
+        "pressureIndex": 0.296103880831349,
+        "gradient": 0.47507637259284713,
+        "entropyIndex": 0.57290801294235
+      },
+      "safety": "within-cap",
+      "boundary": "Dimensionless visual systems only; no physical field, gravity, photon, quantum, portal, financial, or hardware claim."
+    },
+    {
+      "status": "SIMULATED",
+      "tick": 4,
+      "lattice": {
+        "density": 0.5068332853359783,
+        "displacement": 0.18666154428176437,
+        "restoringForce": 0.19386893006342348
+      },
+      "lightGrid": {
+        "illumination": 0.659212416333994,
+        "shadowAlignment": 0.29861004525461443,
+        "photonDensity": 0.6078970311620989
+      },
+      "resonanceMesh": {
+        "activeNodes": 9,
+        "averagePulse": 0.35730666968331115,
+        "propagation": 0.44306027040730583
+      },
+      "voidField": {
+        "pressureIndex": 0.30174104609463537,
+        "gradient": 0.4840093896075636,
+        "entropyIndex": 0.5768830539185114
+      },
+      "safety": "within-cap",
+      "boundary": "Dimensionless visual systems only; no physical field, gravity, photon, quantum, portal, financial, or hardware claim."
+    },
+    {
+      "status": "SIMULATED",
+      "tick": 5,
+      "lattice": {
+        "density": 0.5036204445942557,
+        "displacement": 0.19307912339275526,
+        "restoringForce": 0.19887154400893758
+      },
+      "lightGrid": {
+        "illumination": 0.6655238261285294,
+        "shadowAlignment": 0.2913089535770508,
+        "photonDensity": 0.6138284536329015
+      },
+      "resonanceMesh": {
+        "activeNodes": 9,
+        "averagePulse": 0.35759442600622876,
+        "propagation": 0.44341708824772363
+      },
+      "voidField": {
+        "pressureIndex": 0.3074260263098501,
+        "gradient": 0.4912403866017939,
+        "entropyIndex": 0.5806961396361564
+      },
+      "safety": "within-cap",
+      "boundary": "Dimensionless visual systems only; no physical field, gravity, photon, quantum, portal, financial, or hardware claim."
+    },
+    {
+      "status": "SIMULATED",
+      "tick": 6,
+      "lattice": {
+        "density": 0.5004447365477164,
+        "displacement": 0.2009673279370526,
+        "restoringForce": 0.20508284447592356
+      },
+      "lightGrid": {
+        "illumination": 0.6730644540612223,
+        "shadowAlignment": 0.28316855569985777,
+        "photonDensity": 0.620804381341107
+      },
+      "resonanceMesh": {
+        "activeNodes": 9,
+        "averagePulse": 0.35732085105407574,
+        "propagation": 0.4430778553070539
+      },
+      "voidField": {
+        "pressureIndex": 0.31310182614616217,
+        "gradient": 0.49661935418691905,
+        "entropyIndex": 0.5843498646709832
+      },
+      "safety": "within-cap",
+      "boundary": "Dimensionless visual systems only; no physical field, gravity, photon, quantum, portal, financial, or hardware claim."
+    },
+    {
+      "status": "SIMULATED",
+      "tick": 7,
+      "lattice": {
+        "density": 0.49730807347437783,
+        "displacement": 0.21003688693334427,
+        "restoringForce": 0.2122658262091596
+      },
+      "lightGrid": {
+        "illumination": 0.681053052019881,
+        "shadowAlignment": 0.2747369446566422,
+        "photonDensity": 0.6281581779695523
+      },
+      "resonanceMesh": {
+        "activeNodes": 9,
+        "averagePulse": 0.35668172255571506,
+        "propagation": 0.4422853359690867
+      },
+      "voidField": {
+        "pressureIndex": 0.31870963947458614,
+        "gradient": 0.5000289370936273,
+        "entropyIndex": 0.5878478431903759
+      },
+      "safety": "within-cap",
+      "boundary": "Dimensionless visual systems only; no physical field, gravity, photon, quantum, portal, financial, or hardware claim."
+    },
+    {
+      "status": "SIMULATED",
+      "tick": 8,
+      "lattice": {
+        "density": 0.4942117660909361,
+        "displacement": 0.21996818142276042,
+        "restoringForce": 0.22015855464461376
+      },
+      "lightGrid": {
+        "illumination": 0.688706685977552,
+        "shadowAlignment": 0.26656929628946696,
+        "photonDensity": 0.6352206476088387
+      },
+      "resonanceMesh": {
+        "activeNodes": 10,
+        "averagePulse": 0.3551416601975623,
+        "propagation": 0.4403756586449773
+      },
+      "voidField": {
+        "pressureIndex": 0.3241899406325641,
+        "gradient": 0.5013863447405196,
+        "entropyIndex": 0.591194706611134
+      },
+      "safety": "within-cap",
+      "boundary": "Dimensionless visual systems only; no physical field, gravity, photon, quantum, portal, financial, or hardware claim."
+    },
+    {
+      "status": "SIMULATED",
+      "tick": 9,
+      "lattice": {
+        "density": 0.4911564884929468,
+        "displacement": 0.23042023657113692,
+        "restoringForce": 0.22848153527560716
+      },
+      "lightGrid": {
+        "illumination": 0.6952744167985809,
+        "shadowAlignment": 0.2592036472149751,
+        "photonDensity": 0.641348887124133
+      },
+      "resonanceMesh": {
+        "activeNodes": 10,
+        "averagePulse": 0.35213909386705217,
+        "propagation": 0.4366524763951447
+      },
+      "voidField": {
+        "pressureIndex": 0.3294835828729538,
+        "gradient": 0.5006446819788876,
+        "entropyIndex": 0.5943960815202539
+      },
+      "safety": "within-cap",
+      "boundary": "Dimensionless visual systems only; no physical field, gravity, photon, quantum, portal, financial, or hardware claim."
+    },
+    {
+      "status": "SIMULATED",
+      "tick": 10,
+      "lattice": {
+        "density": 0.48814226104476516,
+        "displacement": 0.2410403428307986,
+        "restoringForce": 0.23694560020069055
+      },
+      "lightGrid": {
+        "illumination": 0.700069604042993,
+        "shadowAlignment": 0.2531374207154149,
+        "photonDensity": 0.6459540049750261
+      },
+      "resonanceMesh": {
+        "activeNodes": 9,
+        "averagePulse": 0.34847523051866885,
+        "propagation": 0.4321092858431494
+      },
+      "voidField": {
+        "pressureIndex": 0.3345328857081914,
+        "gradient": 0.49779367738087343,
+        "entropyIndex": 0.5974585483547027
+      },
+      "safety": "within-cap",
+      "boundary": "Dimensionless visual systems only; no physical field, gravity, photon, quantum, portal, financial, or hardware claim."
+    },
+    {
+      "status": "SIMULATED",
+      "tick": 11,
+      "lattice": {
+        "density": 0.485168451738489,
+        "displacement": 0.2514740279777015,
+        "restoringForce": 0.24526008382529643
+      },
+      "lightGrid": {
+        "illumination": 0.702499412247314,
+        "shadowAlignment": 0.24880573211820906,
+        "photonDensity": 0.6485264877156064
+      },
+      "resonanceMesh": {
+        "activeNodes": 10,
+        "averagePulse": 0.3443406612015964,
+        "propagation": 0.42698241988997954
+      },
+      "voidField": {
+        "pressureIndex": 0.33928269303537006,
+        "gradient": 0.49285979661414764,
+        "entropyIndex": 0.6003895816547454
+      },
+      "safety": "within-cap",
+      "boundary": "Dimensionless visual systems only; no physical field, gravity, photon, quantum, portal, financial, or hardware claim."
+    },
+    {
+      "status": "SIMULATED",
+      "tick": 12,
+      "lattice": {
+        "density": 0.4822337960071104,
+        "displacement": 0.2613750917719698,
+        "restoringForce": 0.25314105139209436
+      },
+      "lightGrid": {
+        "illumination": 0.7020902221240929,
+        "shadowAlignment": 0.24656242703561174,
+        "photonDensity": 0.6486580987925806
+      },
+      "resonanceMesh": {
+        "activeNodes": 9,
+        "averagePulse": 0.33959484829682146,
+        "propagation": 0.4210976118880586
+      },
+      "voidField": {
+        "pressureIndex": 0.34368138440926777,
+        "gradient": 0.4859057388319599,
+        "entropyIndex": 0.6031974730105575
+      },
+      "safety": "within-cap",
+      "boundary": "Dimensionless visual systems only; no physical field, gravity, photon, quantum, portal, financial, or hardware claim."
+    },
+    {
+      "status": "SIMULATED",
+      "tick": 13,
+      "lattice": {
+        "density": 0.47933643444356283,
+        "displacement": 0.27041541322960844,
+        "restoringForce": 0.26031934252884775
+      },
+      "lightGrid": {
+        "illumination": 0.6985078290969965,
+        "shadowAlignment": 0.24666468575463815,
+        "photonDensity": 0.6460593466564563
+      },
+      "resonanceMesh": {
+        "activeNodes": 9,
+        "averagePulse": 0.3350333289791861,
+        "propagation": 0.41544132793419075
+      },
+      "voidField": {
+        "pressureIndex": 0.34768182260981984,
+        "gradient": 0.4770293244276712,
+        "entropyIndex": 0.6058912381084224
+      },
+      "safety": "within-cap",
+      "boundary": "Dimensionless visual systems only; no physical field, gravity, photon, quantum, portal, financial, or hardware claim."
+    },
+    {
+      "status": "SIMULATED",
+      "tick": 14,
+      "lattice": {
+        "density": 0.47647396735972836,
+        "displacement": 0.27829424709139594,
+        "restoringForce": 0.2665481973704297
+      },
+      "lightGrid": {
+        "illumination": 0.6915715406657476,
+        "shadowAlignment": 0.24926187037297687,
+        "photonDensity": 0.6405717539084727
+      },
+      "resonanceMesh": {
+        "activeNodes": 9,
+        "averagePulse": 0.33044885857734835,
+        "propagation": 0.40975658463591197
+      },
+      "voidField": {
+        "pressureIndex": 0.3512422217149802,
+        "gradient": 0.46636179278183304,
+        "entropyIndex": 0.6084805095459265
+      },
+      "safety": "within-cap",
+      "boundary": "Dimensionless visual systems only; no physical field, gravity, photon, quantum, portal, financial, or hardware claim."
+    },
+    {
+      "status": "SIMULATED",
+      "tick": 15,
+      "lattice": {
+        "density": 0.4736435246326644,
+        "displacement": 0.2847467408415931,
+        "restoringForce": 0.27161024487888463
+      },
+      "lightGrid": {
+        "illumination": 0.6812615522101926,
+        "shadowAlignment": 0.2543891048538769,
+        "photonDensity": 0.632174387669102
+      },
+      "resonanceMesh": {
+        "activeNodes": 10,
+        "averagePulse": 0.3260763249519671,
+        "propagation": 0.4043346429404392
+      },
+      "voidField": {
+        "pressureIndex": 0.35432692122135356,
+        "gradient": 0.4540655385940939,
+        "entropyIndex": 0.6109754173207532
+      },
+      "safety": "within-cap",
+      "boundary": "Dimensionless visual systems only; no physical field, gravity, photon, quantum, portal, financial, or hardware claim."
+    },
+    {
+      "status": "SIMULATED",
+      "tick": 16,
+      "lattice": {
+        "density": 0.4708418488433454,
+        "displacement": 0.28955142613856294,
+        "restoringForce": 0.27532365140423476
+      },
+      "lightGrid": {
+        "illumination": 0.6677192762150057,
+        "shadowAlignment": 0.26196587021310286,
+        "photonDensity": 0.6209843635343145
+      },
+      "resonanceMesh": {
+        "activeNodes": 10,
+        "averagePulse": 0.32265763449451484,
+        "propagation": 0.4000954667731984
+      },
+      "voidField": {
+        "pressureIndex": 0.3569070533309191,
+        "gradient": 0.4403313248735379,
+        "entropyIndex": 0.6133864591009854
+      },
+      "safety": "within-cap",
+      "boundary": "Dimensionless visual systems only; no physical field, gravity, photon, quantum, portal, financial, or hardware claim."
+    },
+    {
+      "status": "SIMULATED",
+      "tick": 17,
+      "lattice": {
+        "density": 0.4680653893288344,
+        "displacement": 0.2925364681228791,
+        "restoringForce": 0.2775472517682285
+      },
+      "lightGrid": {
+        "illumination": 0.6512406095479086,
+        "shadowAlignment": 0.27179967669135036,
+        "photonDensity": 0.6072513003031377
+      },
+      "resonanceMesh": {
+        "activeNodes": 10,
+        "averagePulse": 0.31960653605313694,
+        "propagation": 0.3963121047058898
+      },
+      "voidField": {
+        "pressureIndex": 0.3589610923159769,
+        "gradient": 0.4253750194995132,
+        "entropyIndex": 0.6157243625527831
+      },
+      "safety": "within-cap",
+      "boundary": "Dimensionless visual systems only; no physical field, gravity, photon, quantum, portal, financial, or hardware claim."
+    },
+    {
+      "status": "SIMULATED",
+      "tick": 18,
+      "lattice": {
+        "density": 0.4653104044530787,
+        "displacement": 0.2935844919126496,
+        "restoringForce": 0.27818451451467946
+      },
+      "lightGrid": {
+        "illumination": 0.6322624337493564,
+        "shadowAlignment": 0.28359465168820686,
+        "photonDensity": 0.5913459684787773
+      },
+      "resonanceMesh": {
+        "activeNodes": 9,
+        "averagePulse": 0.3176347125335215,
+        "propagation": 0.39386704354156665
+      },
+      "voidField": {
+        "pressureIndex": 0.3604752768558407,
+        "gradient": 0.4094339103114367,
+        "entropyIndex": 0.6179999421310861
+      },
+      "safety": "within-cap",
+      "boundary": "Dimensionless visual systems only; no physical field, gravity, photon, quantum, portal, financial, or hardware claim."
+    },
+    {
+      "status": "SIMULATED",
+      "tick": 19,
+      "lattice": {
+        "density": 0.4625730691635601,
+        "displacement": 0.292635846647327,
+        "restoringForce": 0.2771862266070544
+      },
+      "lightGrid": {
+        "illumination": 0.6113429406553587,
+        "shadowAlignment": 0.2969646662404346,
+        "photonDensity": 0.5737436306861756
+      },
+      "resonanceMesh": {
+        "activeNodes": 11,
+        "averagePulse": 0.31688215137317294,
+        "propagation": 0.3929338677027344
+      },
+      "voidField": {
+        "pressureIndex": 0.3614438983743064,
+        "gradient": 0.3927626608046987,
+        "entropyIndex": 0.6202239528283824
+      },
+      "safety": "within-cap",
+      "boundary": "Dimensionless visual systems only; no physical field, gravity, photon, quantum, portal, financial, or hardware claim."
+    },
+    {
+      "status": "SIMULATED",
+      "tick": 20,
+      "lattice": {
+        "density": 0.45984958474767956,
+        "displacement": 0.2896902125167983,
+        "restoringForce": 0.2745518197968594
+      },
+      "lightGrid": {
+        "illumination": 0.5891366470119065,
+        "shadowAlignment": 0.3114504234083914,
+        "photonDensity": 0.5550028054009782
+      },
+      "resonanceMesh": {
+        "activeNodes": 10,
+        "averagePulse": 0.3169658790651655,
+        "propagation": 0.3930376900408052
+      },
+      "voidField": {
+        "pressureIndex": 0.3618694506604924,
+        "gradient": 0.3756289745805072,
+        "entropyIndex": 0.6224069434240678
+      },
+      "safety": "within-cap",
+      "boundary": "Dimensionless visual systems only; no physical field, gravity, photon, quantum, portal, financial, or hardware claim."
+    },
+    {
+      "status": "SIMULATED",
+      "tick": 21,
+      "lattice": {
+        "density": 0.4571362876384391,
+        "displacement": 0.2848065040126136,
+        "restoringForce": 0.2703293000701575
+      },
+      "lightGrid": {
+        "illumination": 0.5663651951273765,
+        "shadowAlignment": 0.3265397578518924,
+        "photonDensity": 0.5357403864998516
+      },
+      "resonanceMesh": {
+        "activeNodes": 10,
+        "averagePulse": 0.318490878007965,
+        "propagation": 0.3949286887298766
+      },
+      "voidField": {
+        "pressureIndex": 0.361762638389214,
+        "gradient": 0.35830904161787835,
+        "entropyIndex": 0.6245591117817009
+      },
+      "safety": "within-cap",
+      "boundary": "Dimensionless visual systems only; no physical field, gravity, photon, quantum, portal, financial, or hardware claim."
+    },
+    {
+      "status": "SIMULATED",
+      "tick": 22,
+      "lattice": {
+        "density": 0.4544297541455486,
+        "displacement": 0.27810107178482657,
+        "restoringForce": 0.2646137818746329
+      },
+      "lightGrid": {
+        "illumination": 0.5437852217936922,
+        "shadowAlignment": 0.3416902547796137,
+        "photonDensity": 0.5166042112833318
+      },
+      "resonanceMesh": {
+        "activeNodes": 9,
+        "averagePulse": 0.32110814421803974,
+        "propagation": 0.39817409883036925
+      },
+      "voidField": {
+        "pressureIndex": 0.3611422445312266,
+        "gradient": 0.3410828431229677,
+        "entropyIndex": 0.6266901647034132
+      },
+      "safety": "within-cap",
+      "boundary": "Dimensionless visual systems only; no physical field, gravity, photon, quantum, portal, financial, or hardware claim."
+    },
+    {
+      "status": "SIMULATED",
+      "tick": 23,
+      "lattice": {
+        "density": 0.4517268981047622,
+        "displacement": 0.26974425456426393,
+        "restoringForce": 0.2575446690743403
+      },
+      "lightGrid": {
+        "illumination": 0.5221547065513406,
+        "shadowAlignment": 0.35635319454379943,
+        "photonDensity": 0.4982442817536433
+      },
+      "resonanceMesh": {
+        "activeNodes": 10,
+        "averagePulse": 0.3239202755702672,
+        "propagation": 0.40166114170713135
+      },
+      "voidField": {
+        "pressureIndex": 0.36003485901836,
+        "gradient": 0.32422939410233986,
+        "entropyIndex": 0.6288091847705316
+      },
+      "safety": "within-cap",
+      "boundary": "Dimensionless visual systems only; no physical field, gravity, photon, quantum, portal, financial, or hardware claim."
+    },
+    {
+      "status": "SIMULATED",
+      "tick": 24,
+      "lattice": {
+        "density": 0.4490250586416751,
+        "displacement": 0.2599553802013129,
+        "restoringForce": 0.24930156361345757
+      },
+      "lightGrid": {
+        "illumination": 0.5021992772164162,
+        "shadowAlignment": 0.36999777090239305,
+        "photonDensity": 0.481283903124365
+      },
+      "resonanceMesh": {
+        "activeNodes": 9,
+        "averagePulse": 0.32712255291293335,
+        "propagation": 0.40563196561203735
+      },
+      "voidField": {
+        "pressureIndex": 0.3584744733636766,
+        "gradient": 0.3080220038622466,
+        "entropyIndex": 0.6309245064784275
+      },
+      "safety": "within-cap",
+      "boundary": "Dimensionless visual systems only; no physical field, gravity, photon, quantum, portal, financial, or hardware claim."
+    },
+    {
+      "status": "SIMULATED",
+      "tick": 25,
+      "lattice": {
+        "density": 0.4463220755305137,
+        "displacement": 0.2489963596065258,
+        "restoringForce": 0.24009901956868515
+      },
+      "lightGrid": {
+        "illumination": 0.4845799524927942,
+        "shadowAlignment": 0.38213451894315364,
+        "photonDensity": 0.4662920071956126
+      },
+      "resonanceMesh": {
+        "activeNodes": 9,
+        "averagePulse": 0.3300272122297656,
+        "propagation": 0.40923374316490935
+      },
+      "voidField": {
+        "pressureIndex": 0.35650194819289804,
+        "gradient": 0.2927236343377247,
+        "entropyIndex": 0.6330436038137789
+      },
+      "safety": "within-cap",
+      "boundary": "Dimensionless visual systems only; no physical field, gravity, photon, quantum, portal, financial, or hardware claim."
+    },
+    {
+      "status": "SIMULATED",
+      "tick": 26,
+      "lattice": {
+        "density": 0.4436163499854361,
+        "displacement": 0.23716405796586126,
+        "restoringForce": 0.2301802935744473
+      },
+      "lightGrid": {
+        "illumination": 0.4698637383756584,
+        "shadowAlignment": 0.39233692338730475,
+        "photonDensity": 0.4537578761868861
+      },
+      "resonanceMesh": {
+        "activeNodes": 10,
+        "averagePulse": 0.33203584059822117,
+        "propagation": 0.41172444234179423
+      },
+      "voidField": {
+        "pressureIndex": 0.3541643627823624,
+        "gradient": 0.2785824345083774,
+        "entropyIndex": 0.6351729912264897
+      },
+      "safety": "within-cap",
+      "boundary": "Dimensionless visual systems only; no physical field, gravity, photon, quantum, portal, financial, or hardware claim."
+    },
+    {
+      "status": "SIMULATED",
+      "tick": 27,
+      "lattice": {
+        "density": 0.440906889141227,
+        "displacement": 0.22478166287413817,
+        "restoringForce": 0.21981027155562816
+      },
+      "lightGrid": {
+        "illumination": 0.4584983696872158,
+        "shadowAlignment": 0.4002602579381258,
+        "photonDensity": 0.4440693771665515
+      },
+      "resonanceMesh": {
+        "activeNodes": 10,
+        "averagePulse": 0.3334149469073142,
+        "propagation": 0.41343453416506964
+      },
+      "voidField": {
+        "pressureIndex": 0.35151425768458777,
+        "gradient": 0.2658275261898757,
+        "entropyIndex": 0.6373181397197698
+      },
+      "safety": "within-cap",
+      "boundary": "Dimensionless visual systems only; no physical field, gravity, photon, quantum, portal, financial, or hardware claim."
+    },
+    {
+      "status": "SIMULATED",
+      "tick": 28,
+      "lattice": {
+        "density": 0.4381933329499329,
+        "displacement": 0.21218929796746097,
+        "restoringForce": 0.20926777546461614
+      },
+      "lightGrid": {
+        "illumination": 0.45079230597987674,
+        "shadowAlignment": 0.4056568279998752,
+        "photonDensity": 0.437495662985535
+      },
+      "resonanceMesh": {
+        "activeNodes": 10,
+        "averagePulse": 0.3334225783280282,
+        "propagation": 0.41344399712675495
+      },
+      "voidField": {
+        "pressureIndex": 0.34860878332159817,
+        "gradient": 0.2546651122516016,
+        "entropyIndex": 0.6394834095241846
+      },
+      "safety": "within-cap",
+      "boundary": "Dimensionless visual systems only; no physical field, gravity, photon, quantum, portal, financial, or hardware claim."
+    },
+    {
+      "status": "SIMULATED",
+      "tick": 29,
+      "lattice": {
+        "density": 0.4354759627263902,
+        "displacement": 0.19973415240479267,
+        "restoringForce": 0.19883747160792462
+      },
+      "lightGrid": {
+        "illumination": 0.4469008601979074,
+        "shadowAlignment": 0.40838694711900336,
+        "photonDensity": 0.4341750993898827
+      },
+      "resonanceMesh": {
+        "activeNodes": 10,
+        "averagePulse": 0.3319909658252305,
+        "propagation": 0.41166879762328584
+      },
+      "voidField": {
+        "pressureIndex": 0.34550876900814004,
+        "gradient": 0.24527497287299502,
+        "entropyIndex": 0.6416720005391753
+      },
+      "safety": "within-cap",
+      "boundary": "Dimensionless visual systems only; no physical field, gravity, photon, quantum, portal, financial, or hardware claim."
+    },
+    {
+      "status": "SIMULATED",
+      "tick": 30,
+      "lattice": {
+        "density": 0.4327556911041586,
+        "displacement": 0.1877604105229364,
+        "restoringForce": 0.18880161364691905
+      },
+      "lightGrid": {
+        "illumination": 0.44681906904846724,
+        "shadowAlignment": 0.4084251649493789,
+        "photonDensity": 0.4341089483745144
+      },
+      "resonanceMesh": {
+        "activeNodes": 9,
+        "averagePulse": 0.32993052472470197,
+        "propagation": 0.40911385065863043
+      },
+      "voidField": {
+        "pressureIndex": 0.34227772820507113,
+        "gradient": 0.23780740890584282,
+        "entropyIndex": 0.6438859214233964
+      },
+      "safety": "within-cap",
+      "boundary": "Dimensionless visual systems only; no physical field, gravity, photon, quantum, portal, financial, or hardware claim."
+    },
+    {
+      "status": "SIMULATED",
+      "tick": 31,
+      "lattice": {
+        "density": 0.43003403369883314,
+        "displacement": 0.17659927176512352,
+        "restoringForce": 0.17943185813573395
+      },
+      "lightGrid": {
+        "illumination": 0.45038161783578035,
+        "shadowAlignment": 0.4058614731800034,
+        "photonDensity": 0.4371610849375612
+      },
+      "resonanceMesh": {
+        "activeNodes": 9,
+        "averagePulse": 0.3269978369621803,
+        "propagation": 0.4054773178331036
+      },
+      "voidField": {
+        "pressureIndex": 0.33898081687494175,
+        "gradient": 0.2323806838674271,
+        "entropyIndex": 0.6461259778982964
+      },
+      "safety": "within-cap",
+      "boundary": "Dimensionless visual systems only; no physical field, gravity, photon, quantum, portal, financial, or hardware claim."
+    },
+    {
+      "status": "SIMULATED",
+      "tick": 32,
+      "lattice": {
+        "density": 0.4273130633026397,
+        "displacement": 0.16655934839472827,
+        "restoringForce": 0.17098138837958385
+      },
+      "lightGrid": {
+        "illumination": 0.45726982257235155,
+        "shadowAlignment": 0.4008974365203158,
+        "photonDensity": 0.44306375931323316
+      },
+      "resonanceMesh": {
+        "activeNodes": 8,
+        "averagePulse": 0.32353634483729815,
+        "propagation": 0.4011850675982497
+      },
+      "voidField": {
+        "pressureIndex": 0.33568376259901633,
+        "gradient": 0.22907900767742717,
+        "entropyIndex": 0.6483917805030397
+      },
+      "safety": "within-cap",
+      "boundary": "Dimensionless visual systems only; no physical field, gravity, photon, quantum, portal, financial, or hardware claim."
+    }
+  ],
+  "boundary": "Dimensionless visual systems only; no physical field, gravity, photon, quantum, portal, financial, or hardware claim."
+}

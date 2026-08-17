@@ -1,0 +1,46 @@
+2026-08-16T19:33:30.814Z	Initializing build environment...
+2026-08-16T19:33:39.993Z	Success: Finished initializing build environment
+2026-08-16T19:33:40.459Z	Cloning repository...
+2026-08-16T19:33:42.784Z	Restoring from dependencies cache
+2026-08-16T19:33:42.786Z	Restoring from build output cache
+2026-08-16T19:33:44.727Z	Detected the following tools from environment: pnpm@10.11.1, npm@10.9.2, nodejs@24.18.0
+2026-08-16T19:33:44.729Z	Installing project dependencies: pnpm install --frozen-lockfile
+2026-08-16T19:33:44.897Z	! Corepack is about to download https://registry.npmjs.org/pnpm/-/pnpm-10.11.1.tgz
+2026-08-16T19:33:46.276Z	Scope: all 2 workspace projects
+2026-08-16T19:33:46.351Z	Lockfile is up to date, resolution step is skipped
+2026-08-16T19:33:46.459Z	Progress: resolved 1, reused 0, downloaded 0, added 0
+2026-08-16T19:33:46.538Z	Packages: +708
+2026-08-16T19:33:46.540Z	++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2026-08-16T19:33:47.470Z	Progress: resolved 708, reused 0, downloaded 11, added 0
+2026-08-16T19:33:48.472Z	Progress: resolved 708, reused 0, downloaded 30, added 5
+2026-08-16T19:33:49.497Z	Progress: resolved 708, reused 0, downloaded 31, added 5
+2026-08-16T19:33:50.497Z	Progress: resolved 708, reused 0, downloaded 128, added 48
+2026-08-16T19:33:51.497Z	Progress: resolved 708, reused 0, downloaded 154, added 56
+2026-08-16T19:33:52.498Z	Progress: resolved 708, reused 0, downloaded 261, added 94
+2026-08-16T19:33:53.499Z	Progress: resolved 708, reused 0, downloaded 274, added 98
+2026-08-16T19:33:54.511Z	Progress: resolved 708, reused 0, downloaded 355, added 132
+2026-08-16T19:33:55.501Z	Progress: resolved 708, reused 0, downloaded 361, added 257
+2026-08-16T19:33:56.504Z	Progress: resolved 708, reused 0, downloaded 405, added 277
+2026-08-16T19:33:58.604Z	Progress: resolved 708, reused 0, downloaded 443, added 401
+2026-08-16T19:33:59.617Z	Progress: resolved 708, reused 0, downloaded 535, added 438
+2026-08-16T19:34:00.619Z	Progress: resolved 708, reused 0, downloaded 563, added 545
+2026-08-16T19:34:01.618Z	Progress: resolved 708, reused 0, downloaded 594, added 594
+2026-08-16T19:34:02.619Z	Progress: resolved 708, reused 0, downloaded 644, added 627
+2026-08-16T19:34:03.623Z	Progress: resolved 708, reused 0, downloaded 658, added 644
+2026-08-16T19:34:04.282Z	Progress: resolved 708, reused 0, downloaded 708, added 708, done
+2026-08-16T19:34:04.482Z	(node:587) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+2026-08-16T19:34:04.483Z	(Use `node --trace-deprecation ...` to show where the warning was created)
+2026-08-16T19:34:04.735Z	
+2026-08-16T19:34:04.735Z	devDependencies:
+2026-08-16T19:34:04.736Z	+ wrangler 4.123.0
+2026-08-16T19:34:04.736Z	
+2026-08-16T19:34:04.736Z	╭ Warning ─────────────────────────────────────────────────────────────────────╮
+2026-08-16T19:34:04.737Z	│                                                                              │
+2026-08-16T19:34:04.737Z	│   Ignored build scripts: core-js, esbuild, workerd.                          │
+2026-08-16T19:34:04.737Z	│   Run "pnpm approve-builds" to pick which dependencies should be allowed     │
+2026-08-16T19:34:04.737Z	│   to run scripts.                                                            │
+2026-08-16T19:34:04.738Z	│                                                                              │
+2026-08-16T19:34:04.738Z	╰──────────────────────────────────────────────────────────────────────────────╯
+2026-08-16T19:34:04.738Z	
+2026-08-16T19:34:04.778Z	Done in 18.9s using pnpm v10.11.1
+2026-08-16T19:34:04.904Z	Executing user build command: npx wrangler build

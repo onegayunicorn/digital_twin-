@@ -1,0 +1,35 @@
+name: identity-forge-cloudflare-release
+
+# This contract is intentionally stored outside .github/workflows because the
+# connected GitHub App lacks the workflow permission needed to activate it.
+# Copy it into .github/workflows only after that permission is available.
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+jobs:
+  verify-and-deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10.11.1
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24.18.0
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm check
+      - run: pnpm test
+      - run: pnpm test:webhooks
+      - run: pnpm build:verified
+      - run: pnpm preflight
+      - run: pnpm exec wrangler deploy --dry-run
+      # Replace the final step with an authorized Cloudflare secret only after
+      # dashboard settings and release approval have been verified.
+      # - run: pnpm deploy:raw

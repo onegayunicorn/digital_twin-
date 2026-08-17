@@ -1,0 +1,6 @@
+{
+  "name": "Digital Twin Character Customiser",
+  "description": "Interactive 3D cosmic simulation engine featuring the equilibrium lattice, 5D reflection grid, photonic resonance mesh, void pressure dynamics, DeepSeek V4 AI simulation interface, and digital twin camera sensor lab.",
+  "requestFramePermissions": ["camera", "microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

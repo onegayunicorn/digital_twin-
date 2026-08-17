@@ -1,0 +1,66 @@
+# Universal Application Stack Definition
+# Sovereign Application Factory v1.0
+
+frontend:
+  framework: React
+  language: TypeScript
+  styling: Tailwind
+  build: Vite
+  state:
+    - Zustand
+    - TanStack Query
+  persistence: localStorage
+
+api:
+  type: REST
+  documentation: OpenAPI
+  authentication: JWT
+  rate_limiting: true
+
+backend:
+  primary: Cloudflare Workers
+  alternative: Node.js
+  runtime: V8
+  packages: pnpm
+
+database:
+  primary: PostgreSQL
+  cache: Redis
+  object_storage: Cloudflare R2
+  backup: daily
+
+ai:
+  models:
+    - Hugging Face
+    - DeepSeek-V4
+  agents:
+    - Manus
+    - Autohive
+  local: true
+
+source:
+  primary: GitHub
+  backup: IPFS
+  immutable: true
+
+deployment:
+  primary: Cloudflare
+  alternative: Vercel
+  target: Workers
+
+decentralized:
+  storage: IPFS
+  blockchain: EVM-compatible
+  contract: smart contract
+
+research:
+  simulation: local
+  hpc: optional
+  quantum: optional
+  experiment_registry: true
+
+observability:
+  logs: Cloudflare
+  metrics: Prometheus
+  traces: OpenTelemetry
+  audit: event bus

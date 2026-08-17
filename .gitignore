@@ -1,0 +1,21 @@
+# Local dependencies
+node_modules/
+
+# Build output and sandbox logs
+dist/
+.manus-logs/
+.next/
+
+# Local environment and credentials
+.env
+.env.*
+!.env.example
+
+# OS/editor noise
+.DS_Store
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.py[cod]

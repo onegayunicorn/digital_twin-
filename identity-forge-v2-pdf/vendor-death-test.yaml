@@ -1,0 +1,72 @@
+# Vendor Death Test — Portability Checklist
+#
+# Run this before declaring sovereignty.
+# If the answer to "Can you still function?" is YES for each removal,
+# you have achieved infrastructure portability.
+
+tests:
+  - provider: Cloudflare
+    question: "Can you deploy elsewhere?"
+    status: false
+    notes: "Needs alternative deployment configuration (Vercel, self-hosted)"
+
+  - provider: Vercel
+    question: "Can you deploy the frontend elsewhere?"
+    status: false
+    notes: "Needs alternative hosting configuration"
+
+  - provider: GitHub
+    question: "Can you recover the complete source?"
+    status: false
+    notes: "Needs local backups and alternative VCS mirrors"
+
+  - provider: Manus
+    question: "Can another agent build the system?"
+    status: false
+    notes: "Needs alternative AI build system documented"
+
+  - provider: Autohive
+    question: "Can workflows execute independently?"
+    status: false
+    notes: "Needs alternative workflow system (GitHub Actions)"
+
+  - provider: Hugging Face
+    question: "Can the model layer use another provider?"
+    status: false
+    notes: "Needs alternative model hosting or local model support"
+
+  - provider: Blockchain
+    question: "Does the core application still function?"
+    status: true
+    notes: "Core is independent of blockchain; it's optional layer"
+
+  - provider: Quantum Hardware
+    question: "Can simulations still run?"
+    status: true
+    notes: "Can use local simulators as fallback"
+
+  - provider: Database
+    question: "Can data be restored?"
+    status: false
+    notes: "Needs database backup strategy documented"
+
+  - provider: npm / pnpm
+    question: "Can dependencies be restored?"
+    status: false
+    notes: "Needs dependency mirror or offline package cache"
+
+pass_criteria:
+  minimum_pass: 7
+  description: "At least 7 providers must have status: true to declare portability"
+
+remediation_priority:
+  high:
+    - "GitHub source backup"
+    - "Database backup strategy"
+    - "Dependency cache/mirror"
+  medium:
+    - "Alternative deployment config"
+    - "Alternative AI agent documentation"
+  low:
+    - "Alternative workflow system"
+    - "Alternative model hosting"

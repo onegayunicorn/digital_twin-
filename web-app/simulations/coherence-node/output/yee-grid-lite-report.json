@@ -1,0 +1,419 @@
+{
+  "status": "SIMULATED",
+  "grid": {
+    "nx": 8,
+    "ny": 8,
+    "nz": 4,
+    "totalCells": 256,
+    "seed": 783,
+    "energyCap": 0.88
+  },
+  "summary": {
+    "stepCount": 24,
+    "final": {
+      "status": "SIMULATED",
+      "step": 24,
+      "average": {
+        "fidelity": 0.6230129511095583,
+        "coherence": 0.5463920701295137,
+        "intensity": 0.3500167180900462,
+        "decoherence": 0.5796488627092913,
+        "amplitude": 0.09311018095968393,
+        "velocity": 0.25509309076005593,
+        "phase": 0.514204335148861
+      },
+      "normalizedEnergy": 0.23273999660326203,
+      "safety": "within-cap",
+      "boundary": "Dimensionless visual field model; no physical field or hardware output."
+    },
+    "peakNormalizedEnergy": 0.23273999660326203,
+    "resets": 0
+  },
+  "steps": [
+    {
+      "status": "SIMULATED",
+      "step": 1,
+      "average": {
+        "fidelity": 0.6471965734381229,
+        "coherence": 0.5192107347538695,
+        "intensity": 0.08604587489116966,
+        "decoherence": 0.6050806539133191,
+        "amplitude": 0.04629781460880622,
+        "velocity": 0.02547978471437773,
+        "phase": 0.48538683494507495
+      },
+      "normalizedEnergy": 0.05260782473811787,
+      "safety": "within-cap",
+      "boundary": "Dimensionless visual field model; no physical field or hardware output."
+    },
+    {
+      "status": "SIMULATED",
+      "step": 2,
+      "average": {
+        "fidelity": 0.6459666325245053,
+        "coherence": 0.5205107622314245,
+        "intensity": 0.0998418870678961,
+        "decoherence": 0.602853987715207,
+        "amplitude": 0.044778485642723354,
+        "velocity": 0.048780106226331554,
+        "phase": 0.4905422871634073
+      },
+      "normalizedEnergy": 0.064466826312317,
+      "safety": "within-cap",
+      "boundary": "Dimensionless visual field model; no physical field or hardware output."
+    },
+    {
+      "status": "SIMULATED",
+      "step": 3,
+      "average": {
+        "fidelity": 0.6447565851267427,
+        "coherence": 0.5218061449704692,
+        "intensity": 0.11328710742236581,
+        "decoherence": 0.6007460145046934,
+        "amplitude": 0.0439740995630018,
+        "velocity": 0.07002590731281089,
+        "phase": 0.49164763406042766
+      },
+      "normalizedEnergy": 0.07576237143272617,
+      "safety": "within-cap",
+      "boundary": "Dimensionless visual field model; no physical field or hardware output."
+    },
+    {
+      "status": "SIMULATED",
+      "step": 4,
+      "average": {
+        "fidelity": 0.6435658794362098,
+        "coherence": 0.523095884709619,
+        "intensity": 0.1263888977064198,
+        "decoherence": 0.5987533964216709,
+        "amplitude": 0.043572816046889784,
+        "velocity": 0.08943010830989806,
+        "phase": 0.49261123056930955
+      },
+      "normalizedEnergy": 0.08646394068773589,
+      "safety": "within-cap",
+      "boundary": "Dimensionless visual field model; no physical field or hardware output."
+    },
+    {
+      "status": "SIMULATED",
+      "step": 5,
+      "average": {
+        "fidelity": 0.6423939652740955,
+        "coherence": 0.5243790200911462,
+        "intensity": 0.13915971898495627,
+        "decoherence": 0.5968729043379426,
+        "amplitude": 0.04353582365352793,
+        "velocity": 0.10711036975408206,
+        "phase": 0.4973466358278529
+      },
+      "normalizedEnergy": 0.09660197079752209,
+      "safety": "within-cap",
+      "boundary": "Dimensionless visual field model; no physical field or hardware output."
+    },
+    {
+      "status": "SIMULATED",
+      "step": 6,
+      "average": {
+        "fidelity": 0.6412403043359518,
+        "coherence": 0.5256546194432303,
+        "intensity": 0.15161678678668977,
+        "decoherence": 0.5951014737365767,
+        "amplitude": 0.043834573746380556,
+        "velocity": 0.12316166783421068,
+        "phase": 0.49414734998572385
+      },
+      "normalizedEnergy": 0.10620434278909367,
+      "safety": "within-cap",
+      "boundary": "Dimensionless visual field model; no physical field or hardware output."
+    },
+    {
+      "status": "SIMULATED",
+      "step": 7,
+      "average": {
+        "fidelity": 0.6401043694932014,
+        "coherence": 0.5269217829918489,
+        "intensity": 0.163781548564657,
+        "decoherence": 0.5934362180996686,
+        "amplitude": 0.04449984074801705,
+        "velocity": 0.13772116389736766,
+        "phase": 0.4986551130277803
+      },
+      "normalizedEnergy": 0.11533418440334724,
+      "safety": "within-cap",
+      "boundary": "Dimensionless visual field model; no physical field or hardware output."
+    },
+    {
+      "status": "SIMULATED",
+      "step": 8,
+      "average": {
+        "fidelity": 0.6389856338500977,
+        "coherence": 0.5281796354101971,
+        "intensity": 0.1756790061335778,
+        "decoherence": 0.5918744681403041,
+        "amplitude": 0.04549631124857001,
+        "velocity": 0.15089010674273595,
+        "phase": 0.49526554368094367
+      },
+      "normalizedEnergy": 0.12402180804162792,
+      "safety": "within-cap",
+      "boundary": "Dimensionless visual field model; no physical field or hardware output."
+    },
+    {
+      "status": "SIMULATED",
+      "step": 9,
+      "average": {
+        "fidelity": 0.6378835865762085,
+        "coherence": 0.5294273342005908,
+        "intensity": 0.18733690326916985,
+        "decoherence": 0.5904137899633497,
+        "amplitude": 0.046804769917315525,
+        "velocity": 0.16275709310139064,
+        "phase": 0.49181487626947273
+      },
+      "normalizedEnergy": 0.13229958876262535,
+      "safety": "within-cap",
+      "boundary": "Dimensionless visual field model; no physical field or hardware output."
+    },
+    {
+      "status": "SIMULATED",
+      "step": 10,
+      "average": {
+        "fidelity": 0.6367977107875049,
+        "coherence": 0.5306640518829226,
+        "intensity": 0.19878481323394226,
+        "decoherence": 0.5890520000830293,
+        "amplitude": 0.04839983349290833,
+        "velocity": 0.17343734201858751,
+        "phase": 0.5039540900179418
+      },
+      "normalizedEnergy": 0.1402073295818127,
+      "safety": "within-cap",
+      "boundary": "Dimensionless visual field model; no physical field or hardware output."
+    },
+    {
+      "status": "SIMULATED",
+      "step": 11,
+      "average": {
+        "fidelity": 0.6357275031041354,
+        "coherence": 0.5318889811169356,
+        "intensity": 0.21005315605725627,
+        "decoherence": 0.5877871651900932,
+        "amplitude": 0.050237701670994284,
+        "velocity": 0.18306376364489552,
+        "phase": 0.49655420483713897
+      },
+      "normalizedEnergy": 0.14778487379104868,
+      "safety": "within-cap",
+      "boundary": "Dimensionless visual field model; no physical field or hardware output."
+    },
+    {
+      "status": "SIMULATED",
+      "step": 12,
+      "average": {
+        "fidelity": 0.6346724589820951,
+        "coherence": 0.5331013289978728,
+        "intensity": 0.22117218443599995,
+        "decoherence": 0.5866176051786169,
+        "amplitude": 0.05230272895101962,
+        "velocity": 0.19179128970426973,
+        "phase": 0.49698653152063343
+      },
+      "normalizedEnergy": 0.1550887343637631,
+      "safety": "within-cap",
+      "boundary": "Dimensionless visual field model; no physical field or hardware output."
+    },
+    {
+      "status": "SIMULATED",
+      "step": 13,
+      "average": {
+        "fidelity": 0.633632076671347,
+        "coherence": 0.5343003225279972,
+        "intensity": 0.23217097295855638,
+        "decoherence": 0.5855418842984363,
+        "amplitude": 0.054601613768909374,
+        "velocity": 0.19974143951549195,
+        "phase": 0.5013716528342229
+      },
+      "normalizedEnergy": 0.1621713420809859,
+      "safety": "within-cap",
+      "boundary": "Dimensionless visual field model; no physical field or hardware output."
+    },
+    {
+      "status": "SIMULATED",
+      "step": 14,
+      "average": {
+        "fidelity": 0.6326058565173298,
+        "coherence": 0.5354851923184469,
+        "intensity": 0.2430764485616237,
+        "decoherence": 0.5845587868243456,
+        "amplitude": 0.057111655634258796,
+        "velocity": 0.20706784597132355,
+        "phase": 0.5019221936445319
+      },
+      "normalizedEnergy": 0.169085316722402,
+      "safety": "within-cap",
+      "boundary": "Dimensionless visual field model; no physical field or hardware output."
+    },
+    {
+      "status": "SIMULATED",
+      "step": 15,
+      "average": {
+        "fidelity": 0.631593300960958,
+        "coherence": 0.5366551787592471,
+        "intensity": 0.2539125013281591,
+        "decoherence": 0.5836672926088795,
+        "amplitude": 0.05981743171855669,
+        "velocity": 0.21385413000825793,
+        "phase": 0.502566893709627
+      },
+      "normalizedEnergy": 0.17586135435165792,
+      "safety": "within-cap",
+      "boundary": "Dimensionless visual field model; no physical field or hardware output."
+    },
+    {
+      "status": "SIMULATED",
+      "step": 16,
+      "average": {
+        "fidelity": 0.6305939124431461,
+        "coherence": 0.5378095314372331,
+        "intensity": 0.26469920261297375,
+        "decoherence": 0.5828665499575436,
+        "amplitude": 0.06270698872012304,
+        "velocity": 0.22012770269066095,
+        "phase": 0.5033247822836984
+      },
+      "normalizedEnergy": 0.18251129800791924,
+      "safety": "within-cap",
+      "boundary": "Dimensionless visual field model; no physical field or hardware output."
+    },
+    {
+      "status": "SIMULATED",
+      "step": 17,
+      "average": {
+        "fidelity": 0.6296071922406554,
+        "coherence": 0.538947495049797,
+        "intensity": 0.275452162430156,
+        "decoherence": 0.5821558351162821,
+        "amplitude": 0.06577411941903222,
+        "velocity": 0.22593140488606878,
+        "phase": 0.5042107299798317
+      },
+      "normalizedEnergy": 0.18905256224508568,
+      "safety": "within-cap",
+      "boundary": "Dimensionless visual field model; no physical field or hardware output."
+    },
+    {
+      "status": "SIMULATED",
+      "step": 18,
+      "average": {
+        "fidelity": 0.6286326425615698,
+        "coherence": 0.5400683248881251,
+        "intensity": 0.286182049283525,
+        "decoherence": 0.5815345118753612,
+        "amplitude": 0.06901833422234915,
+        "velocity": 0.2312996524560731,
+        "phase": 0.509141148728304
+      },
+      "normalizedEnergy": 0.19550001198731573,
+      "safety": "within-cap",
+      "boundary": "Dimensionless visual field model; no physical field or hardware output."
+    },
+    {
+      "status": "SIMULATED",
+      "step": 19,
+      "average": {
+        "fidelity": 0.6276697642169893,
+        "coherence": 0.5411712784552947,
+        "intensity": 0.29689429327845573,
+        "decoherence": 0.5810019955970347,
+        "amplitude": 0.07244563981248575,
+        "velocity": 0.23622993723256513,
+        "phase": 0.510308624134268
+      },
+      "normalizedEnergy": 0.20185662344116886,
+      "safety": "within-cap",
+      "boundary": "Dimensionless visual field model; no physical field or hardware output."
+    },
+    {
+      "status": "SIMULATED",
+      "step": 20,
+      "average": {
+        "fidelity": 0.62671805662103,
+        "coherence": 0.5422556129051372,
+        "intensity": 0.3075889765750617,
+        "decoherence": 0.5805576981510967,
+        "amplitude": 0.07606411579416772,
+        "velocity": 0.2407498340762686,
+        "phase": 0.5116192229343142
+      },
+      "normalizedEnergy": 0.208134308815166,
+      "safety": "within-cap",
+      "boundary": "Dimensionless visual field model; no physical field or hardware output."
+    },
+    {
+      "status": "SIMULATED",
+      "step": 21,
+      "average": {
+        "fidelity": 0.6257770222146064,
+        "coherence": 0.5433205926092342,
+        "intensity": 0.31826092151459306,
+        "decoherence": 0.5802009975304827,
+        "amplitude": 0.07991136475489213,
+        "velocity": 0.2448778233374469,
+        "phase": 0.5091612527776306
+      },
+      "normalizedEnergy": 0.21435003653564402,
+      "safety": "within-cap",
+      "boundary": "Dimensionless visual field model; no physical field or hardware output."
+    },
+    {
+      "status": "SIMULATED",
+      "step": 22,
+      "average": {
+        "fidelity": 0.6248461606446654,
+        "coherence": 0.5443654803093523,
+        "intensity": 0.3288999646320008,
+        "decoherence": 0.5799311912851408,
+        "amplitude": 0.08402315741852817,
+        "velocity": 0.24863046209793538,
+        "phase": 0.5068304617293506
+      },
+      "normalizedEnergy": 0.22051786138282145,
+      "safety": "within-cap",
+      "boundary": "Dimensionless visual field model; no physical field or hardware output."
+    },
+    {
+      "status": "SIMULATED",
+      "step": 23,
+      "average": {
+        "fidelity": 0.6239249692298472,
+        "coherence": 0.5453895454993472,
+        "intensity": 0.3394914233358577,
+        "decoherence": 0.579747466603294,
+        "amplitude": 0.08842558176320381,
+        "velocity": 0.2520187583286315,
+        "phase": 0.5163304190000417
+      },
+      "normalizedEnergy": 0.22664525447589767,
+      "safety": "within-cap",
+      "boundary": "Dimensionless visual field model; no physical field or hardware output."
+    },
+    {
+      "status": "SIMULATED",
+      "step": 24,
+      "average": {
+        "fidelity": 0.6230129511095583,
+        "coherence": 0.5463920701295137,
+        "intensity": 0.3500167180900462,
+        "decoherence": 0.5796488627092913,
+        "amplitude": 0.09311018095968393,
+        "velocity": 0.25509309076005593,
+        "phase": 0.514204335148861
+      },
+      "normalizedEnergy": 0.23273999660326203,
+      "safety": "within-cap",
+      "boundary": "Dimensionless visual field model; no physical field or hardware output."
+    }
+  ],
+  "boundary": "Dimensionless normalized micro-cell visualization. No Maxwell solve, physical field, molecular, dust, portal, or hardware claim."
+}

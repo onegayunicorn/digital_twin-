@@ -1,0 +1,41 @@
+{
+  "name": "identity-forge-v2",
+  "version": "2.0.0",
+  "description": "5D Reflection Grid · Yee Lattice · Morph-Target Viewport · Animation Engine",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "lint": "eslint src --ext ts,tsx",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@react-three/drei": "^9.99.0",
+    "@react-three/fiber": "^8.15.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "three": "^0.160.0",
+    "zustand": "^4.4.7"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.37",
+    "@types/react-dom": "^18.2.15",
+    "@types/three": "^0.160.0",
+    "@vitejs/plugin-react": "^4.1.1",
+    "typescript": "^5.2.2",
+    "vite": "^5.0.0",
+    "vitest": "^1.0.0"
+  },
+  "keywords": [
+    "identity-forge",
+    "5d-reflection",
+    "yee-lattice",
+    "morph-targets",
+    "three.js",
+    "react-three-fiber"
+  ],
+  "author": "Identity Forge Team",
+  "license": "MIT"
+}
