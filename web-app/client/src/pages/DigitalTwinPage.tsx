@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef, useCallback } from "react";
 import { useSimulation } from "@/contexts/SimulationContext";
 import { AvatarViewport, type FaceVector } from "@/components/AvatarViewport";
+import { MultiPlatformAspectFrame } from "@/components/MultiPlatformAspectFrame";
 import {
   Camera,
   CameraOff,
@@ -353,66 +354,62 @@ export const DigitalTwinPage: React.FC = () => {
             </div>
           </div>
 
-          {/* Module 2: 3D Avatar Maquette Viewport */}
-          <div className="rounded-2xl border border-border bg-card p-5 shadow-sm space-y-4 flex flex-col">
-            <div className="flex items-center justify-between border-b border-border/70 pb-3">
-              <div className="flex items-center gap-2">
-                <Sparkles className="h-4 w-4 text-cyan-400" />
-                <h3 className="font-mono text-sm font-bold text-foreground">3D Digital Twin Avatar Maquette</h3>
-              </div>
-              <span className="font-mono text-[11px] text-cyan-400 font-semibold bg-cyan-950/50 border border-cyan-500/40 px-2 py-0.5 rounded">
-                Resemblance {(resemblance * 100).toFixed(0)}%
-              </span>
-            </div>
-
-            {/* 3D WebGL Avatar Canvas Stage */}
-            <div className="relative h-72 sm:h-80 w-full rounded-xl border border-border/80 bg-black/90 overflow-hidden">
-              <AvatarViewport
-                resemblance={resemblance}
-                tone={tone}
-                vectors={vectorsForAvatar}
-              />
-
-              <div className="absolute bottom-3 right-3 rounded-lg border border-border/60 bg-background/80 px-2.5 py-1 font-mono text-[10px] backdrop-blur-sm text-muted-foreground">
-                WebGL Three.js Bust Model
-              </div>
-            </div>
-
-            {/* Avatar Sliders */}
-            <div className="grid grid-cols-2 gap-3 text-xs font-mono pt-1">
-              <div>
-                <div className="flex justify-between text-[11px] mb-1">
-                  <span className="text-muted-foreground">Resemblance Blend:</span>
-                  <span className="font-bold text-foreground">{(resemblance * 100).toFixed(0)}%</span>
-                </div>
-                <input
-                  type="range"
-                  min="0.2"
-                  max="1.0"
-                  step="0.05"
-                  value={resemblance}
-                  onChange={(e) => setResemblance(Number(e.target.value))}
-                  className="w-full accent-cyan-400 h-1.5 bg-border rounded cursor-pointer"
+          {/* Module 2: 3D Avatar Maquette Viewport wrapped in MultiPlatformAspectFrame */}
+          <MultiPlatformAspectFrame
+            title="3D Avatar Maquette"
+            badge={`Resemblance ${(resemblance * 100).toFixed(0)}%`}
+            defaultHeight={420}
+          >
+            <div className="relative w-full h-full min-h-[300px] flex flex-col justify-between">
+              {/* 3D WebGL Avatar Canvas Stage */}
+              <div className="relative flex-1 w-full min-h-[250px] bg-black/90 overflow-hidden">
+                <AvatarViewport
+                  resemblance={resemblance}
+                  tone={tone}
+                  vectors={vectorsForAvatar}
                 />
+
+                <div className="absolute bottom-2 right-2 rounded-lg border border-border/60 bg-background/80 px-2 py-0.5 font-mono text-[9px] backdrop-blur-sm text-muted-foreground">
+                  Three.js Morph Bust
+                </div>
               </div>
 
-              <div>
-                <div className="flex justify-between text-[11px] mb-1">
-                  <span className="text-muted-foreground">Skin Tone Ratio:</span>
-                  <span className="font-bold text-foreground">{(tone * 100).toFixed(0)}%</span>
+              {/* Avatar Sliders embedded inside frame */}
+              <div className="grid grid-cols-2 gap-3 text-xs font-mono p-3 bg-card/90 border-t border-border/60">
+                <div>
+                  <div className="flex justify-between text-[11px] mb-1">
+                    <span className="text-muted-foreground">Resemblance Blend:</span>
+                    <span className="font-bold text-foreground">{(resemblance * 100).toFixed(0)}%</span>
+                  </div>
+                  <input
+                    type="range"
+                    min="0.2"
+                    max="1.0"
+                    step="0.05"
+                    value={resemblance}
+                    onChange={(e) => setResemblance(Number(e.target.value))}
+                    className="w-full accent-cyan-400 h-1.5 bg-border rounded cursor-pointer"
+                  />
                 </div>
-                <input
-                  type="range"
-                  min="0.0"
-                  max="1.0"
-                  step="0.05"
-                  value={tone}
-                  onChange={(e) => setTone(Number(e.target.value))}
-                  className="w-full accent-cyan-400 h-1.5 bg-border rounded cursor-pointer"
-                />
+
+                <div>
+                  <div className="flex justify-between text-[11px] mb-1">
+                    <span className="text-muted-foreground">Skin Tone Ratio:</span>
+                    <span className="font-bold text-foreground">{(tone * 100).toFixed(0)}%</span>
+                  </div>
+                  <input
+                    type="range"
+                    min="0.0"
+                    max="1.0"
+                    step="0.05"
+                    value={tone}
+                    onChange={(e) => setTone(Number(e.target.value))}
+                    className="w-full accent-cyan-400 h-1.5 bg-border rounded cursor-pointer"
+                  />
+                </div>
               </div>
             </div>
-          </div>
+          </MultiPlatformAspectFrame>
         </div>
 
         {/* Bottom Section: J09 Bio-Ring Telemetry & Sensor Suite */}

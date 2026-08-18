@@ -2,10 +2,11 @@
  * Design: Graphite Specimen Ledger — a materially grounded 3D avatar study with restrained cyan/amber signals.
  * This is a neutral geometric visualization, never a biometric or genetic model.
  */
-import { Canvas, useFrame } from "@react-three/fiber";
+import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import { Float, OrbitControls } from "@react-three/drei";
-import { useRef } from "react";
+import { useRef, useEffect } from "react";
 import * as THREE from "three";
+import { useAspectScale } from "@/contexts/AspectScalingContext";
 
 export type FaceVector = { x: number; y: number };
 
@@ -14,6 +15,30 @@ type AvatarViewportProps = {
   tone: number;
   vectors: Record<string, FaceVector>;
 };
+
+function AvatarCameraController() {
+  const { camera, size } = useThree();
+  const aspect = size.width / Math.max(1, size.height);
+
+  useEffect(() => {
+    if (camera instanceof THREE.PerspectiveCamera) {
+      const baseFov = 32;
+      // When aspect is portrait or square, adjust FOV so head/bust is framed without clipping
+      const adaptedFov = aspect < 1.0 ? Math.min(52, baseFov / Math.max(0.65, aspect)) : baseFov;
+      camera.fov = adaptedFov;
+      camera.updateProjectionMatrix();
+    }
+  }, [aspect, camera]);
+
+  return (
+    <OrbitControls
+      enablePan={false}
+      minDistance={5.2}
+      maxDistance={9.5}
+      maxPolarAngle={Math.PI / 2 + 0.25}
+    />
+  );
+}
 
 function Bust({ resemblance, tone, vectors }: AvatarViewportProps) {
   const group = useRef<THREE.Group>(null);
@@ -86,9 +111,15 @@ function Bust({ resemblance, tone, vectors }: AvatarViewportProps) {
 }
 
 export function AvatarViewport(props: AvatarViewportProps) {
+  const { effectiveDpr } = useAspectScale();
+
   return (
-    <div className="three-stage" aria-label="Interactive 3D neutral avatar study">
-      <Canvas camera={{ position: [0, 0.05, 7], fov: 32 }} dpr={[1, 1.6]}>
+    <div className="relative w-full h-full min-h-[380px] bg-[#0e1211] overflow-hidden" aria-label="Interactive 3D neutral avatar study">
+      <Canvas
+        camera={{ position: [0, 0.05, 7], fov: 32 }}
+        dpr={effectiveDpr}
+        gl={{ antialias: true, alpha: true }}
+      >
         <color attach="background" args={["#0e1211"]} />
         <ambientLight intensity={0.82} />
         <directionalLight position={[4, 5, 4]} intensity={1.8} color="#f2dfca" />
@@ -98,9 +129,13 @@ export function AvatarViewport(props: AvatarViewportProps) {
           <Bust {...props} />
         </Float>
         <gridHelper args={[10, 16, "#22312e", "#17201e"]} position={[0, -3.2, 0]} />
-        <OrbitControls enablePan={false} minDistance={5.8} maxDistance={8.2} maxPolarAngle={Math.PI / 2 + 0.25} />
+        <AvatarCameraController />
       </Canvas>
-      <div className="stage-scale" aria-hidden="true"><span>FACIAL MORPH STUDY</span><span>AXIS: NORMALIZED</span></div>
+      <div className="absolute bottom-2 left-3 pointer-events-none flex items-center gap-2 font-mono text-[9px] text-[#79d7e6]/70">
+        <span>FACIAL MORPH STUDY</span>
+        <span>·</span>
+        <span>AXIS: NORMALIZED</span>
+      </div>
     </div>
   );
 }

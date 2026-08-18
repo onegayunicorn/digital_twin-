@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef, useCallback } from "react";
 import { useSimulation } from "@/contexts/SimulationContext";
 import { CosmicSimulation3D, type LayerVisibility } from "@/components/CosmicSimulation3D";
+import { MultiPlatformAspectFrame } from "@/components/MultiPlatformAspectFrame";
 import { CosmicEngine, type CosmicSnapshot } from "../../../engines/cosmic/src";
 import {
   Play,
@@ -212,69 +213,75 @@ export const SimulationPage: React.FC = () => {
 
       {/* Main Simulation Viewport & Controls Grid */}
       <div className="mx-auto max-w-7xl px-3 sm:px-6 py-6 space-y-6">
-        {/* 3D WebGL Canvas Stage */}
-        <div className="relative h-[480px] sm:h-[580px] w-full rounded-2xl border border-border/80 bg-black/90 overflow-hidden shadow-2xl">
-          <CosmicSimulation3D
-            snapshot={snapshot}
-            layers={layers}
-            selectedBodyId={selectedBodyId}
-            onSelectBody={setSelectedBodyId}
-            cameraView={cameraPreset}
-          />
+        {/* 3D WebGL Canvas Stage wrapped in Multi-Platform Aspect Frame */}
+        <MultiPlatformAspectFrame
+          title="3D Cosmic Simulation Engine"
+          badge="7-Layer WebGL Fluid Lattice"
+          defaultHeight={580}
+        >
+          <div className="relative w-full h-full min-h-[480px]">
+            <CosmicSimulation3D
+              snapshot={snapshot}
+              layers={layers}
+              selectedBodyId={selectedBodyId}
+              onSelectBody={setSelectedBodyId}
+              cameraView={cameraPreset}
+            />
 
-          {/* Camera View Selector Overlay */}
-          <div className="absolute top-3 left-3 z-10 flex flex-wrap items-center gap-1.5 rounded-xl border border-border/60 bg-background/80 p-1 backdrop-blur-md">
-            <span className="px-2 font-mono text-[10px] text-muted-foreground uppercase">Camera:</span>
-            {(
-              [
-                { id: "isometric", label: "Isometric" },
-                { id: "topDown", label: "Top-Down" },
-                { id: "ecliptic", label: "Ecliptic" },
-                { id: "solarFocus", label: "Solar Focus" },
-                { id: "asteroidPOV", label: "Asteroid Conduit" },
-              ] as const
-            ).map((c) => (
-              <button
-                key={c.id}
-                onClick={() => setCameraPreset(c.id)}
-                className={`rounded-lg px-2.5 py-1 font-mono text-[11px] transition-all ${
-                  cameraPreset === c.id
-                    ? "bg-primary text-primary-foreground font-bold"
-                    : "text-muted-foreground hover:text-foreground hover:bg-card"
-                }`}
-              >
-                {c.label}
-              </button>
-            ))}
-          </div>
+            {/* Camera View Selector Overlay */}
+            <div className="absolute top-3 left-3 z-10 flex flex-wrap items-center gap-1.5 rounded-xl border border-border/60 bg-background/80 p-1 backdrop-blur-md">
+              <span className="px-2 font-mono text-[10px] text-muted-foreground uppercase">Camera:</span>
+              {(
+                [
+                  { id: "isometric", label: "Isometric" },
+                  { id: "topDown", label: "Top-Down" },
+                  { id: "ecliptic", label: "Ecliptic" },
+                  { id: "solarFocus", label: "Solar Focus" },
+                  { id: "asteroidPOV", label: "Asteroid Conduit" },
+                ] as const
+              ).map((c) => (
+                <button
+                  key={c.id}
+                  onClick={() => setCameraPreset(c.id)}
+                  className={`rounded-lg px-2.5 py-1 font-mono text-[11px] transition-all ${
+                    cameraPreset === c.id
+                      ? "bg-primary text-primary-foreground font-bold"
+                      : "text-muted-foreground hover:text-foreground hover:bg-card"
+                  }`}
+                >
+                  {c.label}
+                </button>
+              ))}
+            </div>
 
-          {/* Real-Time Mathematical Telemetry Overlay HUD */}
-          <div className="absolute bottom-3 left-3 z-10 rounded-xl border border-border/60 bg-background/85 p-3 backdrop-blur-md font-mono text-xs space-y-1 shadow-lg max-w-[280px] sm:max-w-xs">
-            <div className="flex items-center justify-between border-b border-border/50 pb-1">
-              <span className="text-primary font-bold text-[11px] uppercase flex items-center gap-1">
-                <Activity className="h-3 w-3" />
-                Live Field Inspector
-              </span>
-              <span className="text-[10px] text-emerald-400 font-semibold">T = {snapshot?.tick || 0}</span>
-            </div>
-            <div className="flex justify-between text-[11px]">
-              <span className="text-muted-foreground">Photosynthetic Spacing:</span>
-              <span className="text-teal-400 font-bold">Δx = {deltaX.toFixed(3)} AU</span>
-            </div>
-            <div className="flex justify-between text-[11px]">
-              <span className="text-muted-foreground">Void Pressure Index:</span>
-              <span className="text-purple-400 font-bold">P_void = {params.voidPressure.toFixed(2)}</span>
-            </div>
-            <div className="flex justify-between text-[11px]">
-              <span className="text-muted-foreground">Drum-Skin Frequency:</span>
-              <span className="text-cyan-400 font-bold">f_mesh = {params.meshFreq.toFixed(2)} Hz</span>
-            </div>
-            <div className="flex justify-between text-[11px]">
-              <span className="text-muted-foreground">Solar Irradiance:</span>
-              <span className="text-amber-400 font-bold">{params.P_sun} W/m²</span>
+            {/* Real-Time Mathematical Telemetry Overlay HUD */}
+            <div className="absolute bottom-3 left-3 z-10 rounded-xl border border-border/60 bg-background/85 p-3 backdrop-blur-md font-mono text-xs space-y-1 shadow-lg max-w-[280px] sm:max-w-xs">
+              <div className="flex items-center justify-between border-b border-border/50 pb-1">
+                <span className="text-primary font-bold text-[11px] uppercase flex items-center gap-1">
+                  <Activity className="h-3 w-3" />
+                  Live Field Inspector
+                </span>
+                <span className="text-[10px] text-emerald-400 font-semibold">T = {snapshot?.tick || 0}</span>
+              </div>
+              <div className="flex justify-between text-[11px]">
+                <span className="text-muted-foreground">Photosynthetic Spacing:</span>
+                <span className="text-teal-400 font-bold">Δx = {deltaX.toFixed(3)} AU</span>
+              </div>
+              <div className="flex justify-between text-[11px]">
+                <span className="text-muted-foreground">Void Pressure Index:</span>
+                <span className="text-purple-400 font-bold">P_void = {params.voidPressure.toFixed(2)}</span>
+              </div>
+              <div className="flex justify-between text-[11px]">
+                <span className="text-muted-foreground">Drum-Skin Frequency:</span>
+                <span className="text-cyan-400 font-bold">f_mesh = {params.meshFreq.toFixed(2)} Hz</span>
+              </div>
+              <div className="flex justify-between text-[11px]">
+                <span className="text-muted-foreground">Solar Irradiance:</span>
+                <span className="text-amber-400 font-bold">{params.P_sun} W/m²</span>
+              </div>
             </div>
           </div>
-        </div>
+        </MultiPlatformAspectFrame>
 
         {/* 7 Layer Toggles Deck */}
         <div className="rounded-2xl border border-border bg-card p-5 shadow-sm space-y-4">

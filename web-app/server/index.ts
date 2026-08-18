@@ -1,5 +1,6 @@
 import express from "express";
 import { createServer } from "http";
+import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
 import { processDeepSeekChat, type DeepSeekMessage } from "./deepseek-service";
@@ -44,23 +45,40 @@ export async function startServer() {
     });
   });
 
-  // Serve static files from dist/public in production
-  const staticPath =
-    process.env.NODE_ENV === "production"
-      ? path.resolve(__dirname, "public")
-      : path.resolve(__dirname, "..", "dist", "public");
+  // Resolve static files directory with multiple fallback locations
+  const candidatePaths = [
+    path.resolve(__dirname, "public"),
+    path.resolve(__dirname, "..", "dist", "public"),
+    path.resolve(process.cwd(), "web-app", "dist", "public"),
+    path.resolve(process.cwd(), "dist", "public"),
+    path.resolve(process.cwd(), "dist"),
+  ];
+
+  let staticPath = candidatePaths[0];
+  for (const candidate of candidatePaths) {
+    if (fs.existsSync(path.join(candidate, "index.html"))) {
+      staticPath = candidate;
+      break;
+    }
+  }
 
   app.use(express.static(staticPath));
 
   // Handle client-side routing - serve index.html for all routes
   app.get("*", (_req, res) => {
-    res.sendFile(path.join(staticPath, "index.html"));
+    const indexPath = path.join(staticPath, "index.html");
+    if (fs.existsSync(indexPath)) {
+      res.sendFile(indexPath);
+    } else {
+      res.status(200).send("<!doctype html><html><body><div id='root'>Quantum Avatar Simulation Lab Initializing...</div></body></html>");
+    }
   });
 
-  const port = process.env.PORT || 3000;
+  const port = 3000;
+  const host = "0.0.0.0";
 
-  server.listen(port, () => {
-    console.log(`Server running on http://localhost:${port}/`);
+  server.listen(port, host, () => {
+    console.log(`Server running and listening on http://${host}:${port}/`);
   });
 
   return server;
@@ -69,3 +87,4 @@ export async function startServer() {
 if (process.env.NODE_ENV !== "test") {
   startServer().catch(console.error);
 }
+

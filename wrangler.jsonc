@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/wrangler/config-schema.json",
-  "name": "digital-twin-character-customiser",
+  "name": "digital-twin",
   "compatibility_date": "2026-08-16",
   "assets": {
     "directory": "./web-app/dist/public",

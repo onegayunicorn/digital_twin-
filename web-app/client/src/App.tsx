@@ -4,6 +4,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import { SimulationProvider, useSimulation } from "./contexts/SimulationContext";
+import { AspectScalingProvider } from "./contexts/AspectScalingContext";
 import { NavigationHeader } from "./components/NavigationHeader";
 import { PageTransition } from "./components/PageTransition";
 import { TheoryMathPage } from "./pages/TheoryMathPage";
@@ -50,8 +51,10 @@ export default function App() {
       <ThemeProvider defaultTheme="dark">
         <TooltipProvider>
           <SimulationProvider>
-            <Toaster />
-            <MainAppShell />
+            <AspectScalingProvider>
+              <Toaster />
+              <MainAppShell />
+            </AspectScalingProvider>
           </SimulationProvider>
         </TooltipProvider>
       </ThemeProvider>

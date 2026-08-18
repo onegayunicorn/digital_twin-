@@ -1,8 +1,9 @@
-import { useRef, useMemo } from "react";
-import { Canvas, useFrame } from "@react-three/fiber";
+import { useRef, useMemo, useEffect } from "react";
+import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import { OrbitControls, Text } from "@react-three/drei";
 import * as THREE from "three";
 import type { CosmicSnapshot } from "../../../engines/cosmic/src";
+import { useAspectScale } from "@/contexts/AspectScalingContext";
 
 export type LayerVisibility = {
   lattice: boolean;
@@ -537,8 +538,21 @@ function CameraController({
   view: "isometric" | "topDown" | "ecliptic" | "solarFocus" | "asteroidPOV";
 }) {
   const controlsRef = useRef<any>(null);
+  const { camera, size } = useThree();
+  const aspect = size.width / Math.max(1, size.height);
 
-  useFrame(({ camera }) => {
+  // Smoothly adapt FOV when aspect ratio changes (e.g. mobile 9:16 vs ultrawide 21:9)
+  useEffect(() => {
+    if (camera instanceof THREE.PerspectiveCamera) {
+      const baseFov = 45;
+      // When aspect is portrait (< 1.0), expand FOV so wide celestial orbits aren't clipped
+      const adaptedFov = aspect < 1.0 ? Math.min(75, baseFov / Math.max(0.55, aspect * 0.95)) : baseFov;
+      camera.fov = adaptedFov;
+      camera.updateProjectionMatrix();
+    }
+  }, [aspect, camera]);
+
+  useFrame(() => {
     if (!controlsRef.current) return;
     const targetPos = new THREE.Vector3();
     const cameraPos = new THREE.Vector3();
@@ -590,6 +604,8 @@ export function CosmicSimulation3D({
   onSelectBody,
   cameraView,
 }: CosmicSimulation3DProps) {
+  const { effectiveDpr } = useAspectScale();
+
   if (!snapshot) {
     return (
       <div className="canvas-fallback">
@@ -599,10 +615,11 @@ export function CosmicSimulation3D({
   }
 
   return (
-    <div className="relative w-full h-[520px] bg-[#070a09] rounded overflow-hidden border border-[rgba(121,215,230,0.22)]">
+    <div className="relative w-full h-full min-h-[460px] bg-[#070a09] overflow-hidden">
       <Canvas
         camera={{ position: [18, 16, 22], fov: 45 }}
-        gl={{ antialias: true, alpha: true }}
+        dpr={effectiveDpr}
+        gl={{ antialias: true, alpha: true, powerPreference: "high-performance" }}
       >
         <color attach="background" args={["#060908"]} />
         <ambientLight intensity={0.4} />

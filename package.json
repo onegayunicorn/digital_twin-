@@ -2,6 +2,7 @@
   "name": "digital-twin-character-customiser",
   "version": "1.0.0",
   "description": "Digital Twin Character Customiser Monorepo",
+  "type": "module",
   "private": true,
   "workspaces": [
     "web-app",
@@ -9,8 +10,8 @@
   ],
   "scripts": {
     "dev": "npm run dev --workspace=web-app",
-    "build": "npm run build --workspace=web-app",
-    "start": "npm run start --workspace=web-app",
+    "build": "node scripts/build.js",
+    "start": "node server.ts",
     "check": "npm run check --workspace=web-app",
     "lint": "npm run check --workspace=web-app"
   },
@@ -23,6 +24,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@google/genai": "^2.17.1"
+    "@google/genai": "^2.17.1",
+    "express": "^4.21.2"
   }
 }
